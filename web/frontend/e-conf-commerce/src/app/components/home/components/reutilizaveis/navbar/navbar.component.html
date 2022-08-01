@@ -1,0 +1,31 @@
+
+ <mat-toolbar>
+    <span>Confeitaria do Jony</span>
+  </mat-toolbar>
+<nav class="navbar navbar-expand-lg">
+  <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
+    <li [ngbNavItem]="1">
+      <a ngbNavLink>Home</a>
+      <ng-template ngbNavContent>
+
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="2">
+      <a ngbNavLink>Perfil</a>
+      <ng-template ngbNavContent>
+
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="3">
+      <a ngbNavLink>Bolos</a>
+      <ng-template ngbNavContent>
+
+      </ng-template>
+    </li>
+  </ul>
+</nav>
+
+
+  <div [ngbNavOutlet]="nav" class="mt-2"></div>
+
+
