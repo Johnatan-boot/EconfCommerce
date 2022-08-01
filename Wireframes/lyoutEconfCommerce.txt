@@ -1,0 +1,7 @@
+Notas Layout
+
+Style
+
+backgroun-color: #7d69ac;
+botoes :#93d1f4;
+
