@@ -1,0 +1,420 @@
+programa
+{
+	
+	funcao inicio()
+	{     //Abertura de Conta Na Plataforma
+		cadeia CadastrarCliente,CadastrarEmail,CadastrarSenha
+		cadeia  ClienteCadastrado
+		inteiro FinalizacaoPrograma = 0
+		inteiro CadastroEmail = 1
+		inteiro CadastroSenha = 2
+		inteiro EmailNaoCadastrado = 3
+		inteiro SenhaNaoCadastrada = 4
+		//Criação de Conta na Plataforma
+		escreva("Caro Cliente Para Consumir em nossa Plataforma Crie uma Conta Informando E-mail e Senha.\n")
+		//Informando Email
+		
+		se(CadastroEmail == 1){//1 Condição cadastro EMAIL
+		escreva("Digite 1 Para Informar seu Email:\n")
+		leia(CadastroEmail)
+		escreva(" Informe E-mail:\n")
+		leia(CadastrarEmail)//Johnatan.quenes@gmail.com
+		
+		//Informando Senha
+		se(CadastroSenha == 2){ //2 Condição cadastro SENHA
+		escreva("Digite 2 Para Informar sua Senha:\n")
+		leia(CadastroSenha)	
+		escreva(" Informe sua Senha:\n")
+		leia(CadastrarSenha)//admin123
+		
+          // Caso Usuario Informe Email e  Senha
+		se(CadastroEmail == 1 e CadastroSenha == 2){//3 Condição cadastro EMAIL e SENHA
+		leia(CadastrarEmail)//Johnatan.quenes@gmail.com
+		leia(CadastrarSenha)//admin1234	
+		escreva("=============================================================================\n")
+		escreva("Aguarde enquanto Finalizamos o Processo Abertura de sua  Conta\n")
+		leia(ClienteCadastrado)
+		escreva("Pronto Agora sua Conta Foi Criada Com Sucesso Podera Fazer Suas Compras Com Segurança.\n")
+		escreva("=============================================================================\n")
+
+
+		
+
+		
+		  
+		// Ele Entra na Loja Virtual e se depara com produtos e faz Pedido
+		escreva("Faça seu Pedido:\n")
+		escreva("Digite\n"+
+		               "1- Para Bolos Tradicionais:\n" +
+					"2- Para Bolos Com Coberturas:\n" +
+					"3- Bolos Para Festas:\n")
+
+
+
+		//Opção de Produtos				
+          cadeia  BolosTradicionais,BolosComCobertura,BolosRecheado
+          inteiro BoloTradicional =  1
+          inteiro BoloComCobertura = 2
+          inteiro BoloRecheado =     3
+          cadeia  opcaoProdutoEscolhido
+		inteiro opcaoProdutoEscolhido1 = 1
+		inteiro opcaoProdutoEscolhido2 = 2
+		inteiro opcaoProdutoEscolhido3 = 3
+
+
+          
+		
+         
+se(opcaoProdutoEscolhido1 == 1 ou opcaoProdutoEscolhido2 == 2 ou opcaoProdutoEscolhido3 == 3){ //1 Condição de Produtos Tradicionais
+          leia(opcaoProdutoEscolhido1) //opcaoProdutoEscolhido2 = Bolos Tradicionais	
+         	escreva("Voçê Selcionou a Opção 1- Bolos  Tradicionais agora escolha a Opção que mais lhes agrada no Menu:\n")
+          cadeia  BoloChocolate,BoloBaunilha,BoloLaranja
+         
+          inteiro Bolchoc = 4
+          inteiro BolBaun = 5
+          inteiro BolLar  = 6
+           escreva("4- Bolo de Chocolate:\n"+
+                   "5- Bolo de Baunilha: \n"+
+                   "6- Bolo de Laranja:  \n")
+
+  se(Bolchoc == 4 ou BolBaun == 5 ou BolLar == 6){
+  	 leia(Bolchoc) //opcao4 = Bolos Chocolate
+  	 escreva("Voçê Selcionou a Opção 4- Bolo de Chocolate agora escolha a Quantidade desejada:\n")
+  	 
+  	 inteiro CondicaoCompra
+  	 CondicaoCompra = 4
+  	 CondicaoCompra = 5
+  	 CondicaoCompra = 6 
+  	 se(CondicaoCompra == 4 ou CondicaoCompra == 5 ou CondicaoCompra == 6){
+  	  //Carrinho de compras
+	  inteiro CarrinhoCompras,Pedido,ValorTotal
+          //Aqui Estabelecido uma regrade negocio o Cliente Faz compra de até 100 Produtos
+          //A Estrutura de repetição adota condição de que o o Carrinho de Compras Enquanto o Cliente adciona uma Quantidade
+          //O Carrinho de Compras vai Incrementando os Produtos
+		CarrinhoCompras = 0  //contador de vezes que vai ser adcionado no carrinho
+		Pedido          = 100  // Modificador de vezes que vai ser adcionado no carrinho
+		
+		escreva("Escolha a Quantidade Desejada Do Produto:")
+		leia(Pedido)//Vai ler o numero selecionado ou digitado
+		//A variavel resultado vai ser = ao numero digitado = Contador
+		
+		faca{
+		    ValorTotal = Pedido * CarrinhoCompras 
+		 
+		    
+		    
+		    CarrinhoCompras++
+		   
+		
+		
+		}enquanto(CarrinhoCompras < Pedido)//Enquanto o CarrinhodeCompras for menor ou = ao Pedido Informado ele vai
+		//Executar o Pedido E o Contador ou Qunatidade desejada
+		escreva("Voçê Adcionou "+CarrinhoCompras+ " Bolo de Chocolate 
+		Em seu Carrinho de Compras" + "\n")	
+
+
+
+          leia(BolBaun) //opcao4 = Bolos Baunilha	
+      escreva("Voçê Selcionou a Opção 5- Bolo de Baunilha agora escolha a Quantidade desejada:\n")
+      //Carrinho de compras
+	  //inteiro CarrinhoCompras,Pedido,ValorTotal
+          //Aqui Estabelecido uma regrade negocio o Cliente Faz compra de até 100 Produtos
+          //A Estrutura de repetição adota condição de que o o Carrinho de Compras Enquanto o Cliente adciona uma Quantidade
+          //O Carrinho de Compras vai Incrementando os Produtos
+		CarrinhoCompras = 0  //contador de vezes que vai ser adcionado no carrinho
+		Pedido          = 100  // Modificador de vezes que vai ser adcionado no carrinho
+		
+		escreva("Escolha a Quantidade Desejada Do Produto:")
+		leia(Pedido)//Vai ler o numero selecionado ou digitado
+		//A variavel resultado vai ser = ao numero digitado = Contador
+		
+		faca{
+		    ValorTotal = Pedido * CarrinhoCompras 
+		 
+		    
+		    
+		    CarrinhoCompras++
+		   
+		
+		
+		}enquanto(CarrinhoCompras < Pedido)//Enquanto o CarrinhodeCompras for menor ou = ao Pedido Informado ele vai
+		//Executar o Pedido E o Contador ou Qunatidade desejada
+		escreva("Voçê Adcionou "+CarrinhoCompras+ " Bolo de Baunilha 
+		Em seu Carrinho de Compras" + "\n")	
+
+
+  	 	
+  	 }	
+      
+     
+		
+		
+          
+        
+         
+
+      
+     
+  	 	
+      
+      leia(BolLar) //opcao4 = Bolos Laranja	
+      escreva("Voçê Selcionou a Opção 6- Bolo de Laranja agora escolha a Quantidade desejada:\n")
+  	
+  	}                 
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+          
+ //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+         
+         
+        
+ //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+          se(BoloComCobertura == 2){ //3 Condição  Produtos Cobertura
+          leia(opcaoProdutoEscolhido2) //opcaoProdutoEscolhido2 = Bolos Cobertura	
+          
+          escreva("Voçê Selcionou a Opção 2- Bolos  Com Cobertura agora escolha a Opção que mais lhes agrada no Menu:\n")
+          cadeia  BoloCobChoc,BoloCobLar,BoloCobBaun
+          inteiro BolTruf = 7
+          inteiro BolPrest = 8
+          inteiro BolDK  = 9
+           escreva("7- Bolo Cobertura Chocolate:\n"+
+                   "8- Bolo Cobertura de Laranja: \n"+
+                   "9- BoloCobertura Baunilha:  \n")
+
+         se(BolTruf == 7 ou BolPrest == 8 ou BolDK == 9){
+	  	 leia(Bolchoc) //opcao4 = Bolos Cobertura Chocolate	
+	      escreva("Voçê Selcionou a Opção 7- Bolo Cobertura Chocolate agora escolha a Quantidade desejada:\n")
+	      leia(BolBaun) //opcao4 = Bolos Cobertura Baunilha	
+	      escreva("Voçê Selcionou a Opção 8- Bolo Cobertura de Laranja agora escolha a Quantidade desejada:\n")
+	      leia(BolLar) //opcao4 = Bolos Cobertura Laranja	
+	      escreva("Voçê Selcionou a Opção 9- Bolo Com Cobertura Baunilha agora escolha a Quantidade desejada:\n")
+  	
+  	}              
+         
+          }//3 Condição  Produtos Cobertura
+          
+ //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+          
+          
+         
+          
+//+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++        
+          se(BoloRecheado == 3){//4 Condição  Produtos Recheados
+          leia(opcaoProdutoEscolhido3)	//opcaoProdutoEscolhido3 = Bolos Recheados
+         
+          escreva("Voçê Selcionou a Opção 3- Bolos  Recheados agora escolha a Opção que mais lhes agrada no Menu:\n")
+          cadeia  BoloTrufado,BoloPrestigio,BoloDressedCake
+          inteiro BolTruf = 4
+          inteiro BolPrest = 5
+          inteiro BolDK  = 6
+           escreva("4- Bolo Trufado:\n"+
+                   "5- Bolo de Prestigio: \n"+
+                   "6- Bolo Dressed Cake:  \n")	
+
+         se(BolTruf == 4 ou BolPrest == 5 ou BolDK == 6){
+	  	 leia(BolTruf) //opcao4 = Bolos Trufado	
+	      escreva("Voçê Selcionou a Opção 4- Bolos Trufado agora escolha a Quantidade desejada:\n")
+	      leia(BolPrest) //opcao5 = Bolos Prestigio	
+	      escreva("Voçê Selcionou a Opção 5- Bolos Prestigio agora escolha a Quantidade desejada:\n")
+	      leia(BolDK) //opcao6 = Bolos Dressed Cake	
+	      escreva("Voçê Selcionou a Opção 6- Bolos Dressed Cake agora escolha a Quantidade desejada:\n")
+  	
+  	}               
+          }//4 Condição  Produtos Recheados
+          
+//++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+               
+                   
+
+         
+         
+
+               
+                   
+
+          }//1 Condição de Produtos
+
+          
+          
+
+
+         
+         
+
+
+          
+	}//3 Condição cadastro EMAIL e SENHA
+		
+  }//2 Condição cadastro SENHA
+
+		
+  }//1 Condição cadastro EMAIL
+          
+ }//Função
+
+//Programa	
+} 
+             
+        
+opcao 2
+================================================================
+inteiro opcaoCompras = 0
+leia(opcaoCompras)
+escolha(opcaoCompras)
+{
+caso 1:
+ leia(BC)
+   escreva("Voçê Selecionou a Opção 4-Bolo de Chocolate R$"+PBC+",00 agora escolha a Quantidade  Desejada:\n")
+
+//  Estrutura de Repeticao Calculo preço bolo chocolate
+para(CarrinhoCompras = 0; CarrinhoCompras <= 2; CarrinhoCompras++)
+{
+	TotalComprasBC = CarrinhoCompras * PBC
+		          
+}	
+
+leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+   //A variavel PBC MOSTRA o preço do Produto 
+  //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+  escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		+ "de Compras Valor Total R$"+TotalComprasBC+ ",00" + "\n")
+		leia(CarrinhoCompras)
+
+
+escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")
+pare		               
+caso 2:
+leia(BB)	
+//A variavel PBB MOSTRA o preço do Produto 
+escreva("Voçê Selecionou a Opção 5- Bolo de Baunilha R$"+PBB+",00 agora escolha a Quantidade Desejada:\n")
+//  Estrutura de Repeticao Calculo preço bolo Baunilha
+para(CarrinhoCompras = 0; CarrinhoCompras <= 2; CarrinhoCompras++)
+{
+	TotalComprasBB = CarrinhoCompras * PBB
+		          
+		          
+}
+              		 	
+leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras              			
+escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
++ "de Compras Valor Total R$"+TotalComprasBB+ ",00" + "\n")
+//A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0") 
+pare		             
+caso 3:
+leia(BL)
+escreva("Voçê Selecionou a Opção 6- Bolo de Laranja R$"+PBL+",00 agora escolha a Quantidade Desejada:\n")
+//  Estrutura de Repeticao Calculo preço bolo Laranja
+para(CarrinhoCompras = 0; CarrinhoCompras <= 2; CarrinhoCompras++)
+{
+		          
+  TotalComprasBL = CarrinhoCompras * PBL
+		          
+		          
+}
+
+leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+//A variavel PBL MOSTRA o preço do Produto 
+//A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+	   + "de Compras Valor Total R$"+TotalComprasBL+ ",00" + "\n")//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+//A variavel PBC MOSTRA o preço do Produto 
+//A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+	
+
+                	   			
+
+pare		              
+caso contrario:		              
+escreva("Selecione uma das Opções Informadas 1,2 ou 3 Programa Finalizado! \n")		             
+}	                    
+           
+
+
+
+   //Estrutura Decisão Escolha Qual o Seu Gosto
+se(BC == 4 ou BB == 5 ou BL ==6)
+{
+   leia(BC)
+   escreva("Voçê Selecionou a Opção 4-Bolo de Chocolate R$"+PBC+",00 agora escolha a Quantidade  Desejada:\n")
+
+//  Estrutura de Repeticao Calculo preço bolo chocolate
+para(CarrinhoCompras = 0; CarrinhoCompras <= 2; CarrinhoCompras++)
+{
+	TotalComprasBC = CarrinhoCompras * PBC
+		          
+}	
+
+leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+   //A variavel PBC MOSTRA o preço do Produto 
+  //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+  escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		+ "de Compras Valor Total R$"+TotalComprasBC+ ",00" + "\n")
+		leia(CarrinhoCompras)
+
+
+escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")
+
+leia(BB)	
+//A variavel PBB MOSTRA o preço do Produto 
+escreva("Voçê Selecionou a Opção 5- Bolo de Baunilha R$"+PBB+",00 agora escolha a Quantidade Desejada:\n")
+//  Estrutura de Repeticao Calculo preço bolo Baunilha
+para(CarrinhoCompras = 0; CarrinhoCompras <= 2; CarrinhoCompras++)
+{
+	TotalComprasBB = CarrinhoCompras * PBB
+		          
+		          
+}
+              		 	
+leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras              			
+escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
++ "de Compras Valor Total R$"+TotalComprasBB+ ",00" + "\n")
+//A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")
+leia(BL)
+escreva("Voçê Selecionou a Opção 6- Bolo de Laranja R$"+PBL+",00 agora escolha a Quantidade Desejada:\n")
+//  Estrutura de Repeticao Calculo preço bolo Laranja
+para(CarrinhoCompras = 0; CarrinhoCompras <= 2; CarrinhoCompras++)
+{
+		          
+  TotalComprasBL = CarrinhoCompras * PBL
+		          
+		          
+}
+
+leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+//A variavel PBL MOSTRA o preço do Produto 
+//A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+	   + "de Compras Valor Total R$"+TotalComprasBL+ ",00" + "\n")//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+//A variavel PBC MOSTRA o preço do Produto 
+//A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+	
+
+                	   			
+}senao{
+	escreva("Selecione uma das Opções Informadas 1,2 ou 3 Programa Finalizado! \n")		             
+	
+	 }
+
+
+
+
+
+inteiro BC =  4 // BC = BOLO DE CHOCOLATE
+inteiro BB =  5 //BOLO DE BAUNILHA
+inteiro BL  = 6 //BOLO DE LARANJA 
+
+ //opcao 1 bolos tradcionais	
+     escreva("Voçê Selecionou a Opção 1- Bolos  Tradicionais agora escolha a Opção que mais lhes agrada no Menu:\n")
+            
+             //opcao 4,5,6 Bolos Chocolate,Baunilha,Laranja	
+     escreva("4- Bolo de Chocolate:\n"+
+             "5- Bolo de Baunilha: \n"+
+             "6- Bolo de Laranja:  \n")  
+
+          
+		
+
+		
+		
+	    

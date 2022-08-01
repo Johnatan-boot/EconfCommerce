@@ -1,0 +1,53 @@
+DB E-CONF-COMMERCE
+
+entidades = tabelas
+
+usuarios
+Administrativo
+TI
+Gerencia
+Vendedor
+Recursos Humanos
+
+Ação => cadastrar conta  
+Atributos => Nome,Função,Email,Senha,Endereço,
+Estado,Cidade,Telefone,Email,Expediente
+
+
+Login
+Atributos => Email,Senha,  
+
+
+
+Assoc => Supervisão  C Produção
+
+Produção
+Preparação
+Finalização
+Embalagem
+Entrega
+
+
+Clientes = Pessoa Fisica = Pessoa Juridica
+
+Assoc => Clientes C Pedidos
+
+Pedidos
+FalhanaTransaçao
+ProcessandoPagamento
+Comprafinalizada
+
+Menu = Bolos
+
+BolosTradcionais
+BolosCobertura
+BolosFestas
+
+Orcamento
+Status
+Aguardando
+Aprovado
+
+
+
+

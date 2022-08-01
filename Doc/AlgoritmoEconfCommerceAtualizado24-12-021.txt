@@ -1,0 +1,1066 @@
+Notas Atualizada Algoritmo EconfCommerce
+
+24/12/2021
+
+programa
+{
+	
+	funcao inicio()
+	{     
+		
+		
+		     //Carrinho de compras
+
+
+		     //Declaração das variaveis carrinho de compras, Total do preço para produtos definidos
+		     //iniciais dos produtos
+		    inteiro CarrinhoCompras,PBC,TotalComprasBC, TotalComprasBB,TotalComprasBL,
+		    TotalComprasBCC,TotalComprasBCL,TotalComprasBCB,TotalComprasBT,TotalComprasP,TotalComprasDK,
+		    PBB,PBL,PBT,PBP,PBDK,PBCC,PBCL,PBCB
+
+		    //Inicialização das Variaveis total de compras
+		    //Inicialização das Variaveis Preço dos Produtos
+		    
+		    TotalComprasBC = 0
+		    TotalComprasBB = 0
+		    TotalComprasBL = 0
+		    TotalComprasBCC = 0
+		    TotalComprasBCB = 0
+		    TotalComprasBCL = 0
+		    TotalComprasBT = 0
+		    TotalComprasP = 0
+		    TotalComprasDK = 0
+		    
+		    PBC = 13
+		    PBB =14
+		    PBL= 15
+		    PBCC = 22
+		    PBCL = 24
+		    PBCB = 26
+              PBDK= 90
+              PBT= 120
+              PBP= 130
+              
+		    
+Testes nas Estruturas OK
+
+
+		    //  Estrutura de Repeticao Calculo preço bolo chocolate
+		    para(CarrinhoCompras = 0; CarrinhoCompras <= 2; CarrinhoCompras++){
+		          TotalComprasBC = CarrinhoCompras * PBC
+		          
+		        
+  
+		          
+		    	
+		    	
+		    	
+		    	}
+		    	
+               //  Estrutura de Repeticao Calculo preço bolo Baunilha
+		    	 para(CarrinhoCompras = 0; CarrinhoCompras <= 2; CarrinhoCompras++){
+		          TotalComprasBB = CarrinhoCompras * PBB
+		          
+		          
+		    	
+		    	
+		    	
+		    	}
+                //  Estrutura de Repeticao Calculo preço bolo Laranja
+		    	 para(CarrinhoCompras = 0; CarrinhoCompras <= 2; CarrinhoCompras++){
+		          TotalComprasBL = CarrinhoCompras * PBL
+		          
+		          
+		    	
+		    	
+		    	
+		    	}
+                //  Estrutura de Repeticao Calculo preço bolo Cobertura de chocolate
+		    	para(CarrinhoCompras = 0; CarrinhoCompras <= 2; CarrinhoCompras++){
+		          TotalComprasBCC = CarrinhoCompras * PBCC
+		          
+		          
+		    	
+		    	
+		    	
+		    	}
+                //  Estrutura de Repeticao Calculo preço bolo Cobertura de Laranja
+               para(CarrinhoCompras = 0; CarrinhoCompras <= 2; CarrinhoCompras++){
+		          TotalComprasBCL = CarrinhoCompras * PBCL
+		          
+		          
+		    	
+		    	
+		    	
+		    	}
+                //  Estrutura de Repeticao Calculo preço bolo Cobertura de Baunilha
+		    	para(CarrinhoCompras = 0; CarrinhoCompras <= 2; CarrinhoCompras++){
+		          TotalComprasBCB = CarrinhoCompras * PBCB
+		          
+		          
+		    	
+		    	
+		    	
+		    	}
+
+               //  Estrutura de Repeticao Calculo preço Bolo Trufado 
+		    	para(CarrinhoCompras = 0; CarrinhoCompras <= 2; CarrinhoCompras++){
+		          TotalComprasBT = CarrinhoCompras * PBT
+		          
+		          
+		    	
+		    	
+		    	
+		    	}
+                //  Estrutura de Repeticao Calculo preço Bolo Prestigio
+		    	para(CarrinhoCompras = 0; CarrinhoCompras <= 2; CarrinhoCompras++){
+		          TotalComprasP = CarrinhoCompras * PBP
+		          
+		          
+		    	
+		    	
+		    	
+		    	}
+                    //  Estrutura de Repeticao Calculo preço Bolo Dressed Cake
+		    		para(CarrinhoCompras = 0; CarrinhoCompras <= 2; CarrinhoCompras++){
+		          TotalComprasDK = CarrinhoCompras * PBDK
+		          
+		          
+		    	
+		    	
+		    	
+		    	}
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	//1 Etapa do Ciclo Algoritmo Abertura de Conta Na Plataforma  ok
+		
+		//Abertura de Conta Na Plataforma
+		cadeia CadastrarCliente,CadastrarEmail,CadastrarSenha
+		cadeia  ClienteCadastrado
+		inteiro FinalizacaoPrograma = 0
+		inteiro CadastroEmail = 1
+		inteiro CadastroSenha = 2
+		inteiro EmailNaoCadastrado = 3
+		inteiro SenhaNaoCadastrada = 4
+		//Criação de Conta na Plataforma
+		escreva("Caro Cliente Para Consumir em nossa Plataforma Crie uma Conta Informando E-mail e Senha.\n")
+		//Informando Email
+		
+		se(CadastroEmail == 1){//1 Condição cadastro EMAIL
+		escreva("Digite 1 Para Informar seu Email:\n")
+		leia(CadastroEmail)
+		escreva(" Informe E-mail:\n")
+		leia(CadastrarEmail)//Johnatan.quenes@gmail.com
+		
+		//Informando Senha
+		se(CadastroSenha == 2){ //2 Condição cadastro SENHA
+		escreva("Digite 2 Para Informar sua Senha:\n")
+		leia(CadastroSenha)	
+		escreva(" Informe sua Senha:\n")
+		leia(CadastrarSenha)//admin123
+		
+          // Caso Usuario Informe Email e  Senha
+		se(CadastroEmail == 1 e CadastroSenha == 2){//3 Condição cadastro EMAIL e SENHA
+		leia(CadastrarEmail)//Johnatan.quenes@gmail.com
+		leia(CadastrarSenha)//admin1234	
+		escreva("=============================================================================\n")
+		escreva("Aguarde enquanto Finalizamos o Processo Abertura de sua  Conta\n")
+		leia(ClienteCadastrado)
+		escreva("Pronto Agora sua Conta Foi Criada Com Sucesso Poderá Fazer Suas Compras Com Segurança.\n")
+		escreva("=============================================================================\n")
+
+           //2 Etapa do Ciclo Algoritmo Navegação Fluxo do Programa Econf Ecommerce
+
+          //Navegação Fluxo do Programa Econf Ecommerce
+		
+           inteiro navegacaoEcommerce
+           
+           navegacaoEcommerce = 0
+           
+           
+		se(navegacaoEcommerce == 1 ou navegacaoEcommerce== 2 ou navegacaoEcommerce == 3 ou navegacaoEcommerce == 0){
+            
+
+                  //  Estrutura de Switch case Opção de Menu Compras
+
+                      inteiro opcaoCompra = 0
+	              leia(opcaoCompra)
+	              escolha(opcaoCompra)
+
+	              {
+	              	caso 1:
+
+	                //opcao 1 bolos tradcionais	
+         	        escreva("Voçê Selecionou a Opção 1- Bolos  Tradicionais agora escolha a Opção que mais lhes agrada no Menu:\n")
+                        cadeia  BoloChocolate,BoloBaunilha,BoloLaranja
+                        //opcao 4,5,6 Bolos Chocolate,Baunilha,Laranja	
+                        escreva("4- Bolo de Chocolate:\n"+
+                                "5- Bolo de Baunilha: \n"+
+                                "6- Bolo de Laranja:  \n")
+
+                       inteiro BC =  4 // BC = BOLO DE CHOCOLATE
+                       inteiro BB =  5 //BOLO DE BAUNILHA
+                       inteiro BL  = 6 //BOLO DE LARANJA 
+
+
+
+
+
+ 
+                           //Estrutura Decisão Escolha Qual o Seu Gosto
+                           se(BC == 4 ou BB == 5 ou BL ==6){
+                           leia(BC)
+              		   escreva("Voçê Selecionou a Opção 4-Bolo de Chocolate R$"+PBC+",00 agora escolha a Quantidade  Desejada:\n")
+              		   leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		           //A variavel PBC MOSTRA o preço do Produto 
+		           //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+              	   
+		           escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		           + "de Compras Valor Total R$"+TotalComprasBC+ ",00" + "\n")
+		           leia(CarrinhoCompras)
+              	     
+		           //Mensagem de  Mais Compras
+                   
+                           escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")
+                           inteiro AdcionaCompras = 1
+                           inteiro FinalizaCompras = 0
+		          
+                          se(AdcionaCompras == 1 ou FinalizaCompras == 0 )
+                          {
+                            inteiro opcaoCompras = 0
+	                    leia(opcaoCompra)
+	                 escolha(opcaoCompra)
+                           {
+		               caso 1:
+		             //opcao 1 bolos tradcionais	
+         	             escreva("Voçê Selecionou a Opção 1- Bolos  Tradicionais agora escolha a Opção que mais lhes agrada no Menu:\n")
+                            cadeia  BoloChocolates,BoloBaunilhas,BoloLaranjas
+                            //opcao 4,5,6 Bolos Chocolate,Baunilha,Laranja	
+                            escreva("4- Bolo de Chocolate:\n"+
+                            "5- Bolo de Baunilha: \n"+
+                            "6- Bolo de Laranja:  \n")
+
+                             inteiro BC2 =  4 // BC = BOLO DE CHOCOLATE
+                             inteiro BB2 =  5 //BOLO DE BAUNILHA
+                             inteiro BL2  = 6 //BOLO DE LARANJA 
+
+                   
+                   	     //Estrutura Decisão Escolha Qual o Seu Gosto
+                             se(BC == 4 ou BB == 5 ou BL ==6){
+                              leia(BC)
+              		      escreva("Voçê Selecionou a Opção 4-Bolo de Chocolate R$"+PBC+",00 agora escolha a Quantidade  Desejada:\n")
+              		      leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		              //A variavel PBC MOSTRA o preço do Produto 
+		              //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+	
+	                      	 escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		         	+ "de Compras Valor Total R$"+TotalComprasBC+ ",00" + "\n")
+		          	leia(CarrinhoCompras)
+                          	escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")
+	
+	                        leia(BB)
+                     	 	//A variavel PBB MOSTRA o preço do Produto 
+              		 	escreva("Voçê Selecionou a Opção 5- Bolo de Baunilha R$"+PBB+",00 agora escolha a Quantidade Desejada:\n")
+              			leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		        	escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		        	+ "de Compras Valor Total R$"+TotalComprasBB+ ",00" + "\n")
+		        	//A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+
+                                escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")
+
+                                leia(BL)
+              			escreva("Voçê Selecionou a Opção 6- Bolo de Laranja R$"+PBL+",00 agora escolha a Quantidade Desejada:\n")
+              	       		leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		        	//A variavel PBL MOSTRA o preço do Produto 
+		        	//A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+		        	escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		       		 + "de Compras Valor Total R$"+TotalComprasBL+ ",00" + "\n")//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		        	//A variavel PBC MOSTRA o preço do Produto 
+		        	//A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+	
+			        //leia(AdcionaCompras)
+                	   	//escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")
+
+ 
+                               }
+
+                  		escreva(" Deseja Algo Mais ? Se Sim Dgite 1,  Finalize sua Compra e Retorne \n novamente Para o Inicio do Atendimento. "+
+                  		"Senão Deseja Comprar Mais \n Nada Digite 0 e Prossiga com a Finalização de Compra. ")
+                   	  	leia(FinalizaCompras)
+                
+              	               pare
+              		       caso 2:
+		 	       escreva("Voçê Selecionou a Opção 2- Bolos  Com Cobertura agora escolha a Opção que mais lhes agrada no Menu:\n")
+              		       cadeia  BoloCobChoc,BoloCobLar,BoloCobBaun
+		  	       escreva("7- Bolo Cobertura Chocolate:\n"+
+                   	      "8- Bolo Cobertura de Laranja: \n"+
+                  	      "9- Bolo Cobertura Baunilha:  \n")
+
+                	      inteiro BCC =  7 //BCC =BOLO COM COBERTURA DE CHOCOLATE
+                	      inteiro BCL =  8 // BOLO COM COBERTURA DE LARANJA
+                	      inteiro BCB  = 9 //BOLO COM COBERTURA DE BAUNILHA
+
+		               //ESTRUTURA DE DECISAO
+
+                                se(BCC == 7 ou BCL == 8 ou BCB ==9){
+              	leia(BCC)
+              	escreva("Voçê Selecionou a Opção 7-Bolo Cobertura Chocolate R$"+PBCC+",00agora escolha a Quantidade Desejada:\n")
+              	leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		//A variavel PBCC MOSTRA o preço do Produto 
+		//A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+              	escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		+ "de Compras Valor Total R$"+TotalComprasBCC+ ",00" + "\n")	
+                escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")
+		leia(BCL)
+		escreva("Voçê Selecionou a Opção 8- Bolo Cobertura de Laranja R$"+PBCL+",00 agora escolha a Quantidade Desejada:\n")
+		leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		//A variavel PBL MOSTRA o preço do Produto 
+		//A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+		escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		+ "de Compras Valor Total R$"+TotalComprasBCL+ ",00" + "\n")        
+                escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")
+                leia(BCB)
+              	escreva("Voçê Selecionou a Opção 9- Bolo Cobertura Baunilha R$"+PBCB+",00 agora escolha a Quantidade Desejada:\n")
+              	leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		//A variavel PBC MOSTRA o preço do Produto 
+		//A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+                escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		+ "de Compras Valor Total R$"+TotalComprasBCB+ ",00" + "\n")   	  
+                escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")  	  
+              	}
+                escreva(" Deseja Algo Mais ? Se Sim Dgite 1,  Finalize sua Compra e Retorne \n novamente Para o Inicio do Atendimento. "+
+                "Senão Deseja Comprar Mais \n Nada Digite 0 e Prossiga com a Finalização de Compra. ")
+                leia(FinalizaCompras)	  
+              	 //ESTRUTURA DE DECISAO
+                se(BT == 1 ou BP == 2 ou BDC ==3){
+              	 leia(BT)
+              	 escreva("Voçê Selecionou a Opção 1-Bolo Trufado R$"+PBT+",00 agora escolha a Quantidade Desejada:\n")
+                 leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		 //A variavel PBT MOSTRA o preço do Produto 
+		 //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+		 escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		         + "de Compras Valor Total R$"+TotalComprasBT+ ",00" + "\n")
+
+                 escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")	
+		
+                  leia(BP)
+                 escreva("Voçê Selecionou a Opção 2- Bolo de Prestigio R$"+PBP+",00 agora escolha a Quantidade Desejada:\n")
+                 leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		 //A variavel PBP MOSTRA o preço do Produto 
+		 //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+		 escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		 + "de Compras Valor Total R$"+TotalComprasP+ ",00" + "\n")            
+              		
+                escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")
+                   	leia(BDC)
+              		escreva("Voçê Selecionou a Opção 3-  Bolo Dressed Cake R$"+PBDK+",00 agora escolha a Quantidade Desejada:\n")
+              		leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		        //A variavel PBDK MOSTRA o preço do Produto 
+		        //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+		        escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		          	+ "de Compras Valor Total R$"+TotalComprasDK+ ",00" + "\n")  
+                   	  
+              	escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")
+                   	  
+              	
+              	
+              	}
+                escreva(" Deseja Algo Mais ? Se Sim Dgite 1,  Finalize sua Compra e Retorne \n novamente Para o Inicio do Atendimento. "+
+                       "Senão Deseja Comprar Mais \n Nada Digite 0 e Prossiga com a Finalização de Compra. ")
+                   	leia(FinalizaCompras)
+              	        
+		 pare
+           		caso contrario:	
+		
+			escreva("Selecione uma das Opções Informadas 1,2 ou 3 Programa Finalizado! \n")
+		
+	}	
+
+                   	
+                   	// opções de Pagamento
+
+           escreva("Agora Escolha uma Opção de Pagamento, Crédito,Débito,Pix \n ")
+                  inteiro Credito =1
+                  inteiro Debito = 2
+                  inteiro Pix =    3
+
+          se(Credito == 1 ou Debito == 2 ou Pix == 3)
+            {
+             leia(Credito)		
+                   	  escreva("Voçê Selecionou a opção Crédito, Agora Informe Numero do cartão\n"+
+                   	  "Nome e Codigo de Segurança Para Cadastrar e Finalizar Processo de Compra\n\n")
+                          cadeia CadCartaoCliente = "XXX-XXX-XXX-09 \n Nome:Johnatan Quenes Dos Santos,\n" +
+                         "Codigo Segurança: XXX"
+                          inteiro opcadcartao =      1
+                          cadeia FinaliCompras =    "2 - Para Finalizar Processo de Compras"
+                          inteiro opFinaliCompras =  2
+
+
+                       cadeia Pedido1 = " Bolo de Chocolate R$"+PBC+",00 "+CarrinhoCompras+" Itens R$"+TotalComprasBC+",00"
+                       cadeia Pedido2 = " Bolo Com Cobertura de Laranja R$"+PBCL+",00 "+CarrinhoCompras+" Itens R$"+TotalComprasBCL+",00"
+                       cadeia Pedido3 = " Bolo Trufado R$"+PBT+",00 "+CarrinhoCompras+" Itens R$"+TotalComprasBT+",00"
+                       
+                       se(opcadcartao == 1 ou opFinaliCompras == 2)
+                       {
+                       	leia(opcadcartao)
+                       	//Alertar que deve cadastrar cartão
+                       	escreva("Voçê Digitou a opção 1-Para Cadastrar Seu Cartão de Credito,\n Agora Informe\n"+
+                       	"Numero do Cartão e Codigo de segurança:")
+                       	leia(CadCartaoCliente)
+                         escreva("Otimo Seu Cartão Foi Cadastrado Com Sucesso!!!\n"+" Numero do Cartão: XXX-XXX-XXX-09 \n Nome:Johnatan Quenes Dos Santos,\n" +
+                                 "Codigo Segurança: XXX \n Agora Poderá Fazer Suas Compras Com Segurança!")
+                        
+                       	leia(opFinaliCompras)
+
+                       	escreva("Então Vamos Revisar Seu Pedido:\n"+
+                       	"Voçê Adcionou em Seu Carrinho de Compras:\n"+Pedido1+"\n"
+                       	+Pedido2+"\n"+Pedido3+"")
+                       	leia(CarrinhoCompras)
+                       	
+                       	escreva("Se Seu Pedido Estiver Tudo Ok Digite 1 Para Finalizar, Caso Não Digite 2 Para Alterar Compras")
+
+                       	//Revisar Compras || Ou Finalizar Compras
+                       	inteiro FinalizarCompras = 3
+                       	inteiro RevisarCompras   = 4         
+		        //Aqui Possivelmente Colocar uma Parte de Acompanhamento do Pedido
+
+                       	   inteiro ConfirmacaoPagamento,Separacao,Conferencia, Faturamento, Expedicao, EntregaSucesso,EntregaFracasso
+                          cadeia ConfirmacaoPagamentoC = "Compra Aguardando Confirmação de Pagamento"
+                          cadeia SeparacaoC = "Pedido Em Separação"
+                          cadeia ConferenciaC = "Pedido Em Conferência"
+                          cadeia FaturamentoC = "Pedido Em Faturamento"
+                          cadeia ExpedicaoC = "Pedido Em Expedicao"
+                          cadeia EntregaSucessoC = "Pedido Entregue Com Sucesso"
+                          cadeia EntregaFracassoC = "Pedido Nao Entregue Por Algum Imprevisto, Favor Contatar a Central de Delivery"
+
+                          ConfirmacaoPagamento = 1
+                          Separacao            = 2
+                          Conferencia          = 3
+                          Faturamento          = 4
+                          Expedicao            = 5
+                          EntregaSucesso       = 6
+                          EntregaFracasso      = 7 
+                  
+		         
+                   	 se(FinalizarCompras == 3 ou RevisarCompras == 4)
+                       	{
+                       		//Aqui Será Finalizado A Compra Com O Pedido do Cliente Enviado um Email com Nota Fiscal e StatusCodigoRastreio
+                              
+                       		leia(FinalizarCompras)
+                       		escreva("Compra Finalizada Com Sucesso!!! Nota Fiscal + StatusCodigoRastreio Enviado Para Seu Email\n\n")
+                                //Faturamento e  Acompanhamento do Pedido
+                       		//Aqui Possivelmente Colocar uma Parte de Acompanhamento do Pedido
+                                //Condição Do Pedido = STATUS COMPRA
+                                //Aqui A Logica Empregada é de Cancelar um Possivel Pedido ou Adcionar Possivel Pedido
+                              //Retornando Para Menu Inicial da Aplicação
+                       		leia(RevisarCompras)
+                       		escreva("Então Vamos Revisar Seu Pedido, Caso Precise Alterar Retorne o Menu Navegação \n")
+                         
+                              inteiro opcaoCompras2 = 0
+	                      leia(opcaoCompras2)
+	         escolha(opcaoCompras2)
+
+                       {
+		          caso 1:
+		                //opcao 1 bolos tradcionais	
+         	        escreva("Voçê Selecionou a Opção 1- Bolos  Tradicionais agora escolha a Opção que mais lhes agrada no Menu:\n")
+                        cadeia  BoloChocolates,BoloBaunilhas,BoloLaranjas
+                        //opcao 4,5,6 Bolos Chocolate,Baunilha,Laranja	
+                        escreva("4- Bolo de Chocolate:\n"+
+                        	"5- Bolo de Baunilha: \n"+
+                        	"6- Bolo de Laranja:  \n")
+
+                
+                                  inteiro BC2 =  4 // BC = BOLO DE CHOCOLATE
+                		  inteiro BB2 =  5 //BOLO DE BAUNILHA
+              			  inteiro BL2  = 6 //BOLO DE LARANJA 
+
+
+
+
+ 
+              //Estrutura Decisão Escolha Qual o Seu Gosto
+              se(BC == 4 ou BB == 5 ou BL ==6)
+		{
+                         leia(BC)
+              		escreva("Voçê Selecionou a Opção 4-Bolo de Chocolate R$"+PBC+",00 agora escolha a Quantidade  Desejada:\n")
+              		leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		          //A variavel PBC MOSTRA o preço do Produto 
+		          //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+		          
+		          escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		          + "de Compras Valor Total R$"+TotalComprasBC+ ",00" + "\n")
+		          leia(CarrinhoCompras)     		
+                          escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")
+                             
+                           leia(BB)
+                          //A variavel PBB MOSTRA o preço do Produto 
+              		  escreva("Voçê Selecionou a Opção 5- Bolo de Baunilha R$"+PBB+",00 agora escolha a Quantidade Desejada:\n")
+              		  leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		           escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		          + "de Compras Valor Total R$"+TotalComprasBB+ ",00" + "\n")
+		           //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+                     
+                   	  escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")
+                   	  leia(BL)
+              		  escreva("Voçê Selecionou a Opção 6- Bolo de Laranja R$"+PBL+",00 agora escolha a Quantidade Desejada:\n")
+              	         leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		          //A variavel PBL MOSTRA o preço do Produto 
+		          //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+		         escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		          + "de Compras Valor Total R$"+TotalComprasBL+ ",00" + "\n")//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		          //A variavel PBC MOSTRA o preço do Produto 
+		          //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto   
+
+                           //leia(AdcionaCompras)
+                   	  //escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")
+                   	 
+              	
+              	}
+   
+		     escreva(" Deseja Algo Mais ? Se Sim Dgite 1,  Finalize sua Compra e Retorne \n novamente Para o Inicio do Atendimento. "+
+                  "Senão Deseja Comprar Mais \n Nada Digite 0 e Prossiga com a Finalização de Compra. ")
+                   	  leia(FinalizaCompras)
+               
+
+                  
+            pare        
+                   	 
+               caso 2:
+		 escreva("Voçê Selecionou a Opção 2- Bolos  Com Cobertura agora escolha a Opção que mais lhes agrada no Menu:\n")
+          cadeia  BoloCobChoc,BoloCobLar,BoloCobBaun
+		 escreva("7- Bolo Cobertura Chocolate:\n"+
+                   "8- Bolo Cobertura de Laranja: \n"+
+                   "9- Bolo Cobertura Baunilha:  \n")
+
+                inteiro BCC =  7 //BCC =BOLO COM COBERTURA DE CHOCOLATE
+                inteiro BCL =  8 // BOLO COM COBERTURA DE LARANJA
+                inteiro BCB  = 9 //BOLO COM COBERTURA DE BAUNILHA
+
+                //ESTRUTURA DE DECISAO
+
+              se(BCC == 7 ou BCL == 8 ou BCB ==9){
+              	     leia(BCC)
+              		escreva("Voçê Selecionou a Opção 7-Bolo Cobertura Chocolate R$"+PBCC+",00agora escolha a Quantidade Desejada:\n")
+              		leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		          //A variavel PBCC MOSTRA o preço do Produto 
+		          //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+              		 escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		          + "de Compras Valor Total R$"+TotalComprasBCC+ ",00" + "\n")
+
+		        
+                   	  escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")
+                  
+              		
+		          leia(BCL)
+		          escreva("Voçê Selecionou a Opção 8- Bolo Cobertura de Laranja R$"+PBCL+",00 agora escolha a Quantidade Desejada:\n")
+		          leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		          //A variavel PBL MOSTRA o preço do Produto 
+		          //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+		          escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		          + "de Compras Valor Total R$"+TotalComprasBCL+ ",00" + "\n")
+                          
+                   	  escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")
+                   	  
+                   	  
+              		leia(BCB)
+              		escreva("Voçê Selecionou a Opção 9- Bolo Cobertura Baunilha R$"+PBCB+",00 agora escolha a Quantidade Desejada:\n")
+              		  leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		          //A variavel PBC MOSTRA o preço do Produto 
+		          //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+              		 escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		          + "de Compras Valor Total R$"+TotalComprasBCB+ ",00" + "\n")
+		        
+              		 
+                   	  escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")
+                   	 
+              		
+              	    
+              	
+              	}
+                escreva(" Deseja Algo Mais ? Se Sim Dgite 1,  Finalize sua Compra e Retorne \n novamente Para o Inicio do Atendimento. "+
+                  "Senão Deseja Comprar Mais \n Nada Digite 0 e Prossiga com a Finalização de Compra. ")
+                   	  leia(FinalizaCompras)
+
+                 pare
+           caso 3:
+           escreva("Voçê Selecionou a Opção 3- Bolos  Recheados agora escolha a Opção que mais lhes agrada no Menu:\n")
+           inteiro BT =  1 //BT= BOLO TRUFADO
+           inteiro BP =  2 //BP= BOLO PRESTIGIO
+           inteiro BDC  = 3  // BDC = BOLO DRESSED CAKE
+
+          
+                
+
+            
+                 
+           escreva("1- Bolo Trufado:\n"+
+                   "2- Bolo de Prestigio: \n"+
+                   "3- Bolo Dressed Cake:  \n")
+
+               //ESTRUTURA DE DECISAO
+
+              se(BT == 1 ou BP == 2 ou BDC ==3){
+              	     leia(BT)
+              		escreva("Voçê Selecionou a Opção 1-Bolo Trufado R$"+PBT+",00 agora escolha a Quantidade Desejada:\n")
+              		 leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		          //A variavel PBT MOSTRA o preço do Produto 
+		          //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+		            escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		          + "de Compras Valor Total R$"+TotalComprasBT+ ",00" + "\n")
+
+                   	  escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")
+                  
+                   	  
+                    leia(BP)
+                    escreva("Voçê Selecionou a Opção 2- Bolo de Prestigio R$"+PBP+",00 agora escolha a Quantidade Desejada:\n")
+                     leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		          //A variavel PBP MOSTRA o preço do Produto 
+		          //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+		           escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		          + "de Compras Valor Total R$"+TotalComprasP+ ",00" + "\n")
+		            
+                   	  escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")
+                   	  
+                   	  
+              		leia(BDC)
+              		escreva("Voçê Selecionou a Opção 3-  Bolo Dressed Cake R$"+PBDK+",00 agora escolha a Quantidade Desejada:\n")
+              		 leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		          //A variavel PBDK MOSTRA o preço do Produto 
+		          //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+		            escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		          + "de Compras Valor Total R$"+TotalComprasDK+ ",00" + "\n")
+
+		           
+                   	  escreva("Deseja Algo Mais ? Se Sim Dgite 1, se Não Digite 0")
+                   	  
+              	
+              	
+              	}   	  
+		           
+              		escreva(" Deseja Algo Mais ? Se Sim Dgite 1,  Finalize sua Compra e Retorne \n novamente Para o Inicio do Atendimento. "+
+                  "Senão Deseja Comprar Mais \n Nada Digite 0 e Prossiga com a Finalização de Compra. ")
+                   	  leia(FinalizaCompras)
+ 
+                   
+           pare
+           caso contrario:	
+		
+		escreva("Selecione uma das Opções Informadas 1,2 ou 3 Programa Finalizado! \n")
+		
+		}	
+
+
+
+
+
+                             
+
+
+
+                       		
+                       		
+                       	}
+
+                       	     cadeia CodigoRastreio = "XQRT76"
+
+                             //Revisar
+                       	 se(ConfirmacaoPagamento == 1 ou Separacao == 2 ou Conferencia == 3 ou Faturamento == 4 ou Expedicao == 5 ou 
+                       	EntregaSucesso == 6 ou EntregaFracasso == 7)
+                          {
+
+                          	escreva(" Por Aqui Você Consegue Saber o Andamento de Seu Pedido, Insira Codigo de Rastreio")
+                          	//Classe A
+                          	leia(ConfirmacaoPagamento)
+                          	escreva("Pedido C512, Codigo: "+CodigoRastreio+" Codigo 01: Compra Aguardando Confirmação de Pagamento")
+
+                          	leia(Separacao)
+                          	escreva(" Codigo 02: Sepaaração de seu Pedido")
+
+                          	
+                          	leia(Conferencia)
+                          	escreva(" Codigo 03: Pedido em Conferência")
+
+
+
+                          	//Classe B
+
+
+                          	leia(Faturamento)
+                          	escreva(" Codigo 04: Pedido Faturado")
+
+
+                          	leia(Expedicao)
+                          	escreva(" Codigo 05:  Expedição do Pedido ")
+
+
+                          	leia(EntregaSucesso)
+                          	escreva(" Codigo 06: Pedido Entregue Com Sucesso ")
+
+
+                          	//Classe C
+
+                          	
+                             leia(EntregaFracasso)
+                          	escreva(" Codigo 07: Pedido Travado Não Entregue, Favor Entrar em Contato Com o Delivery ")
+                          	         // EntregaSucesso
+
+
+                          	
+                          
+                          }	
+                   	 
+              	           }
+                   	  
+                       leia(Debito)
+                   	  escreva("Voçê Selecionou a opção Debito, Agora Informe Numero do cartão\n"+
+                   	  "Nome e Codigo de Segurança Para Cadastrar e Finalizar Processo de Compra \n\n")
+                       leia(Pix)
+                   	  escreva("Voçê Selecionou a opção Pix, Agora Informe Seu Pix Para Cadastrar "+
+                   	  "e Finalizar Processo de Compra\n\n")	
+                   	  
+                   		
+                   		
+                   		
+                   	}
+                   	
+                   	
+                   	
+                   	
+                   	
+                   	
+                   	
+                   	
+                   	
+                   	
+                   	
+                   	
+                   	}
+		         
+                    leia(BB)
+                     //A variavel PBB MOSTRA o preço do Produto 
+              		escreva("Voçê Selecionou a Opção 5- Bolo de Baunilha R$"+PBB+",00 agora escolha a Quantidade Desejada:\n")
+              		leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		           escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		          + "de Compras Valor Total R$"+TotalComprasBB+ ",00" + "\n")
+		           //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+              		leia(BL)
+              		escreva("Voçê Selecionou a Opção 6- Bolo de Laranja R$"+PBL+",00 agora escolha a Quantidade Desejada:\n")
+              	     leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		          //A variavel PBL MOSTRA o preço do Produto 
+		          //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+		         escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		          + "de Compras Valor Total R$"+TotalComprasBL+ ",00" + "\n")//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		          //A variavel PBC MOSTRA o preço do Produto 
+		          //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+              	
+              	}    leia(navegacaoEcommerce)
+	              	pare
+	              	
+                 
+	              	caso 2:
+
+	              	 escreva("Voçê Selecionou a Opção 2- Bolos  Com Cobertura agora escolha a Opção que mais lhes agrada no Menu:\n")
+          cadeia  BoloCobChoc,BoloCobLar,BoloCobBaun
+		 escreva("7- Bolo Cobertura Chocolate:\n"+
+                   "8- Bolo Cobertura de Laranja: \n"+
+                   "9- Bolo Cobertura Baunilha:  \n")
+
+                inteiro BCC =  7 //BCC =BOLO COM COBERTURA DE CHOCOLATE
+                inteiro BCL =  8 // BOLO COM COBERTURA DE LARANJA
+                inteiro BCB  = 9 //BOLO COM COBERTURA DE BAUNILHA
+
+                //ESTRUTURA DE DECISAO
+
+              se(BCC == 7 ou BCL == 8 ou BCB ==9){
+              	     leia(BCC)
+              		escreva("Voçê Selecionou a Opção 7-Bolo Cobertura Chocolate R$"+PBCC+",00agora escolha a Quantidade Desejada:\n")
+              		leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		          //A variavel PBCC MOSTRA o preço do Produto 
+		          //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+              		 escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		          + "de Compras Valor Total R$"+TotalComprasBCC+ ",00" + "\n")
+              		
+		          leia(BCL)
+		          escreva("Voçê Selecionou a Opção 8- Bolo Cobertura de Laranja R$"+PBCL+",00 agora escolha a Quantidade Desejada:\n")
+		          leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		          //A variavel PBL MOSTRA o preço do Produto 
+		          //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+		          escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		          + "de Compras Valor Total R$"+TotalComprasBCL+ ",00" + "\n")
+                   
+              		
+              		leia(BCB)
+              		escreva("Voçê Selecionou a Opção 9- Bolo Cobertura Baunilha R$"+PBCB+",00 agora escolha a Quantidade Desejada:\n")
+              		  leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		          //A variavel PBC MOSTRA o preço do Produto 
+		          //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+              		 escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		          + "de Compras Valor Total R$"+TotalComprasBCB+ ",00" + "\n")
+		        
+              		
+              		
+              	    
+              	
+              	}    leia(navegacaoEcommerce)
+	              	pare
+                    
+	              		
+	              	caso 3:
+	              	escreva("Voçê Selecionou a Opção 3- Bolos  Recheados agora escolha a Opção que mais lhes agrada no Menu:\n")
+          
+          
+                inteiro BT =  1 //BT= BOLO TRUFADO
+                inteiro BP =  2 //BP= BOLO PRESTIGIO
+                inteiro BDC  = 3  // BDC = BOLO DRESSED CAKE
+
+
+            
+                 
+           escreva("1- Bolo Trufado:\n"+
+                   "2- Bolo de Prestigio: \n"+
+                   "3- Bolo Dressed Cake:  \n")
+
+               //ESTRUTURA DE DECISAO
+
+              se(BT == 1 ou BP == 2 ou BDC ==3){
+              	     leia(BT)
+              		escreva("Voçê Selecionou a Opção 1-Bolo Trufado R$"+PBT+",00 agora escolha a Quantidade Desejada:\n")
+              		 leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		          //A variavel PBT MOSTRA o preço do Produto 
+		          //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+		            escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		          + "de Compras Valor Total R$"+TotalComprasBT+ ",00" + "\n")
+                    leia(BP)
+                    escreva("Voçê Selecionou a Opção 2- Bolo de Prestigio R$"+PBP+",00 agora escolha a Quantidade Desejada:\n")
+                     leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		          //A variavel PBP MOSTRA o preço do Produto 
+		          //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+		           escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		          + "de Compras Valor Total R$"+TotalComprasP+ ",00" + "\n")
+              		leia(BDC)
+              		escreva("Voçê Selecionou a Opção 3-  Bolo Dressed Cake R$"+PBDK+",00 agora escolha a Quantidade Desejada:\n")
+              		 leia(CarrinhoCompras)//Vai ler o Contador de Itens Comprados em sua Lista de compras ou carrinho de compras
+		          //A variavel PBDK MOSTRA o preço do Produto 
+		          //A variavel TotalCompras o Total o calculo de quantidade Itens x Valor do Produto
+		            escreva("Voçê Adcionou "+CarrinhoCompras+ " Itens Em seu Carrinho "
+		          + "de Compras Valor Total R$"+TotalComprasDK+ ",00" + "\n")
+
+		          
+              	
+              	
+              	}    leia(navegacaoEcommerce)
+	              	pare
+	              	 
+               
+
+	              	caso 0:
+	              	escreva("Programa Finalizado! \n")
+	              	leia(navegacaoEcommerce)
+	              	pare
+	              
+	              	caso contrario:
+	              	
+		            escreva("Selecione uma das Opções Informadas 1,2 ou 3 ou 0 Para Finalizar o Programa. Programa Finalizado! \n")
+	              	
+	              	
+	              	}
+	               
+                  //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+               
+                   
+
+         
+         
+
+               
+                   
+
+		
+          
+          
+
+
+                	
+		       escreva("Selecione uma das Opções Informadas 1,2 ou 3 Programa Finalizado! \n")
+
+			
+              	
+              	}
+
+		 }//3 Condição cadastro EMAIL e SENHA
+		
+   	         }//2 Condição cadastro SENHA
+
+		
+  		}//1 Condição cadastro EMAIL
+          
+	        }//Função
+
+                //Programa	
+	      } 	
+			
+			
+			
+			
+			
+			
+		  
+		
+
+
+
+		
+		   
+      
+
+
+
+
+         
+
+
+
+
+
+             
+
+           
+              
+
+              	
+         
+
+
+             
+
+			 
+
+	    
+
+		    	
+		    	
+		    	
+
+
+		
+         
+
+
+              
+	
+		
+			
+
+  	
+          
+
+         
+         
+
+
+  
+              	
+               
+
+                  
+          
+               
+              	
+                
+		        
+              	
+              	
+
+                   
+          
+          
+          
+               
+
+
+            
+                 
+                 
+
+              
+              
+                  
+                   	  
+                
+		            
+                   	
+
+		           
+                   	  
+ 
+                   
+            		
+
+
+                           
+
+
+                       
+	
+	
+	
+                
+              	   
+		         
+              	     
+                   
+                  
+		         
+                   	 
+		         
+                    	
+		           
+              		  
+
+		           
+              
+              
+
+       
+          
+              		
+                   	
+                   
+          
+
+              
+                       	
+                       	
+                       	 
+
+
+
+
+
+                        
+                       	
+                       	
+
+                       	
+                      
+             
+        
+
+
+          
+		
+
+		
+		
+	    
