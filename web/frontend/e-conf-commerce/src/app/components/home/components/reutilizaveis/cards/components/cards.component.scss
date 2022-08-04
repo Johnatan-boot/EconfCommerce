@@ -1,0 +1,120 @@
+.container{
+  position: relative;
+  right: 10px;
+}
+
+mat-card{
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+  width: 300px;
+  height: 400px;
+  background-color: #4E342E;
+  border-radius: 10px;
+  border: 2px solid grey;
+}
+
+.card-1{
+  position: relative;
+
+  top: 80px;
+}
+.card-2{
+  position: relative;
+  left: 360px;
+  bottom: 320px;
+
+}
+.card-3{
+  position: relative;
+  left: 720px;
+  bottom: 720px;
+
+}
+
+
+.container-btn{
+  position: relative;
+  left: 10px;
+}
+
+
+.btn-success,.btn-danger,.btn-info{
+  width: 80px;
+  font-family: segoe script;
+  font-size: 12px;
+  margin-top: 10px;
+  color: white;
+}
+
+.btn-success{
+  position: relative;
+  top: 130px;
+  left: 4px;
+}
+.btn-danger{
+  position: relative;
+  top: 90px;
+  left: 88px;
+}
+.btn-info{
+  position: relative;
+  top: 48px;
+  left: 174px;
+}
+
+
+.row2{
+  position: relative;
+  bottom: 790px;
+}
+
+
+
+mat-card .imgcard{
+  height: 200px;
+  background-color: grey;
+}
+mat-card img{
+  height: 200px;
+  width: 263px;
+  background-color: grey;
+}
+
+
+
+@media(min-width:320px)and(max-width:720px){
+  mat-card{
+    width: 100%;
+    position: relative;
+    left: 20px;
+  }
+  mat-card img{
+    height: 200px;
+    width: 234px;
+    background-color: grey;
+  }
+
+  .card-2{
+    position: relative;
+    left: 20px;
+    top: 85px;
+
+  }
+  .card-3{
+    position: relative;
+    left: 20px;
+    top: 90px;
+
+  }
+
+  .container-btn{
+    position: relative;
+    left: 0px;
+  }
+
+  .row2{
+    position: relative;
+    top: 20px;
+  }
+}

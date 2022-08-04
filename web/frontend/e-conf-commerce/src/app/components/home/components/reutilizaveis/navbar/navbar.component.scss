@@ -1,7 +1,12 @@
 mat-toolbar{
-  background-color:#7C4DFF;
+  background-color:#6200EA;
   font-family: segoe script;
   color: white;
+}
+
+ .spanlogo{
+  position: relative;
+  left:530px;
 }
 
 
@@ -12,7 +17,8 @@ mat-toolbar{
 .nav-tabs{
   background-color: #6852a1;
   position: relative;
-  left: 120px;
+  left: 10px;
+  color:white;
 
 }
 
@@ -20,4 +26,25 @@ a{
   color: white;
   font-family: segoe script;
   font-size: 11px;
+  text-decoration: none;
+}
+
+a:hover{
+  color: white;
+}
+
+@media(width:320px)and(width:720px){
+  .nav-tabs{
+    background-color: #6852a1;
+    position: relative;
+    left: 10px;
+    font-size: 11px;
+
+
+  }
+
+  
+
+
+
 }

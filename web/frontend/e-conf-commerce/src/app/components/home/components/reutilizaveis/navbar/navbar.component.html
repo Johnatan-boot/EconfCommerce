@@ -1,6 +1,6 @@
 
  <mat-toolbar>
-    <span>Confeitaria do Jony</span>
+    <span class="spanlogo">Confeitaria do Jony</span>
   </mat-toolbar>
 <nav class="navbar navbar-expand-lg">
   <ul ngbNav #nav="ngbNav" [(activeId)]="active" class="nav-tabs">
@@ -16,8 +16,33 @@
 
       </ng-template>
     </li>
+   
     <li [ngbNavItem]="3">
-      <a ngbNavLink>Bolos</a>
+      <a ngbNavLink>Bolos Tradcionais</a>
+      <ng-template ngbNavContent>
+
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="3">
+      <a ngbNavLink>Bolos Com Cobertura</a>
+      <ng-template ngbNavContent>
+
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="3">
+      <a ngbNavLink>Bolos Para Festas</a>
+      <ng-template ngbNavContent>
+
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="3">
+      <a ngbNavLink>Cadastro</a>
+      <ng-template ngbNavContent>
+
+      </ng-template>
+    </li>
+    <li [ngbNavItem]="3">
+      <a ngbNavLink>Orcamento</a>
       <ng-template ngbNavContent>
 
       </ng-template>

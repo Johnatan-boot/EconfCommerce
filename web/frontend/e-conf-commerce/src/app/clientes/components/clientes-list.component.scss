@@ -1,0 +1,58 @@
+mat-card{
+  background-color: #4E342E;
+  width: 100%;
+}
+
+mat-toolbar{
+  background-color:#6200EA;
+  font-family: segoe script;
+  color: white;
+  border-radius: 10px;
+  text-align: center;
+}
+
+h3{
+  font-family: segoe script;
+  color: white;
+  position: relative;
+  left: 480px;
+}
+
+.container table{
+  margin-top: 5px;
+  width: 100%;
+  text-align: center;
+  background-color: #8D6E63;
+  font-family: segoe script;
+
+}
+
+table{
+  border-radius: 20px;
+
+}
+
+table th, td{
+  border-radius: 20px;
+
+  color: white;
+}
+
+.btnadicionar{
+  background-color: #76FF03;
+}
+
+.btneditar{
+  background-color: #00E5FF;
+  color: white;
+}
+
+.btndeletar{
+  background-color: #D50000;
+  color: white;
+
+}
+
+
+
+
