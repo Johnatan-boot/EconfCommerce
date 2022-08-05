@@ -6,6 +6,8 @@
 package br.com.confeitariadojony.telas;
 import java.sql.*;
 import br.com.confeitariadojony.dal.ModuloConexao;
+import java.awt.Color;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -19,6 +21,76 @@ public class TelaLogin extends javax.swing.JFrame {
     /**
      * Creates new form TelaLogin
      */
+      
+       //metodo logar
+    public void logar(){
+    //variavel que vai executar instrucao sql de pesquisa no banco
+    //usuario e senha correspondente
+    
+    String sql ="select * from tbusuarios where login =? and senha=?";
+       
+      
+        try {
+            //Preparando uma Consulta ao Banco de Dados em funcao do que foi digitado
+            //nas caixas de texto o ? e substituido pelo conteudo das variaveis
+             pst = conexao.prepareStatement(sql);
+             pst.setString(1,txtUsuario.getText());
+             //Capturando e Recuperando uma Senha 
+             String captura = new String(txtSenha.getPassword());
+             pst.setString(2,captura);
+             // A LINHA ABAIXO EXECUTA A QUERY
+             rs = pst.executeQuery();
+             
+             
+             //Se existir usuario e senha correspondente libera a proxima tela tela principal
+             
+             if (rs.next()) {
+                 //A linha Abaixo Captura ou obtém o campo perfil da tabela tbusuario
+                 String perfil  = rs.getString(6);
+                 //System.out.println(perfil);
+                 
+                 //A estrutura Abaixo faz o Tratamento do Perfil arpovado libera a tela para o usuario
+                 if (perfil.equals("admin")) {
+                     //Instanciando um Objeto
+                     //Abrir a Tela Principal
+                     TelaPrincipal principal = new TelaPrincipal();
+                     principal.setVisible(true);
+                    //Campo desabilitado vou habilitar fornecendo acesso aos campos bloqueados
+                    TelaPrincipal.menRelVen.setEnabled(true);
+                    TelaPrincipal.menCadUsu.setEnabled(true);
+                    //Ação de fechar a tela Login Para acesso a tela principal
+                    this.dispose();
+                    //Setando o campo usuario pelo campo Administrador ou Usuario substituicao 
+                    //da label escrita usuario pelo usuario que esta entrando no sistema
+                    TelaPrincipal.lblUsuario.setText(rs.getString(2));
+                    TelaPrincipal.lblUsuario.setForeground(Color.red);
+                     
+                 }else{
+                     //Abrir a Tela Principal
+                     TelaPrincipal principal = new TelaPrincipal();
+                     principal.setVisible(true);
+                     TelaPrincipal.lblUsuario.setText(rs.getString(2));
+                    //Ação de fechar a tela Login Para acesso a tela principal
+                    this.dispose();
+                    TelaPrincipal.lblUsuario.setText(rs.getString(2));
+                    TelaPrincipal.lblUsuario.setForeground(Color.green);
+                 
+                 }
+                 //fechando a conexao com o banco de dados
+                conexao.close();
+            }else{
+                 JOptionPane.showMessageDialog(null,"Usuario e Senha Invalido(s)!");
+             }
+            
+        } catch (Exception e) {
+            JOptionPane.showMessageDialog(null, e);
+            
+        }
+    
+    }
+      
+      
+      
     public TelaLogin() {
         initComponents();
         conexao = ModuloConexao.conector();
@@ -68,6 +140,11 @@ public class TelaLogin extends javax.swing.JFrame {
         btnLogin.setFont(new java.awt.Font("Segoe Script", 3, 14)); // NOI18N
         btnLogin.setForeground(new java.awt.Color(102, 0, 0));
         btnLogin.setText("Login");
+        btnLogin.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnLoginActionPerformed(evt);
+            }
+        });
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/br/com/confeitariadojony/icones/bolo-de-aniversario.png"))); // NOI18N
 
@@ -137,6 +214,11 @@ public class TelaLogin extends javax.swing.JFrame {
         pack();
         setLocationRelativeTo(null);
     }// </editor-fold>//GEN-END:initComponents
+
+    private void btnLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnLoginActionPerformed
+        // Chamando o Metodo Logar
+        logar();
+    }//GEN-LAST:event_btnLoginActionPerformed
 
     /**
      * @param args the command line arguments

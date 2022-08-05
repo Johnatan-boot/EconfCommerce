@@ -17,18 +17,19 @@ mat-card{
 .card-1{
   position: relative;
 
-  top: 80px;
+  bottom: 620px;
 }
 .card-2{
   position: relative;
   left: 360px;
-  bottom: 320px;
+  bottom: 1020px;
 
 }
 .card-3{
   position: relative;
   left: 720px;
-  bottom: 720px;
+  bottom: 1420px;
+  z-index: -1;
 
 }
 
@@ -88,6 +89,7 @@ mat-card img{
     width: 100%;
     position: relative;
     left: 20px;
+    bottom: 50px;
   }
   mat-card img{
     height: 200px;
@@ -98,13 +100,14 @@ mat-card img{
   .card-2{
     position: relative;
     left: 20px;
-    top: 85px;
+    bottom: 610px;
 
   }
   .card-3{
     position: relative;
     left: 20px;
-    top: 90px;
+    bottom: 600px;
+    margin-bottom:10px;
 
   }
 

@@ -4,7 +4,18 @@ mat-toolbar{
   color: white;
 }
 
- .spanlogo{
+form{
+  position: relative;
+  left: 730px;
+  
+}
+
+.btn{
+  background-color: #93d1f4;
+  color:white;
+}
+
+.spanlogo{
   position: relative;
   left:530px;
 }
@@ -19,6 +30,14 @@ mat-toolbar{
   position: relative;
   left: 10px;
   color:white;
+  border: 1px solid white;
+  border-radius: 8px;
+  
+
+}
+.nav-tabs:hover{
+  background-color: #7c6ba8;
+ 
 
 }
 
@@ -33,14 +52,20 @@ a:hover{
   color: white;
 }
 
-@media(width:320px)and(width:720px){
+@media(width:320px)and(width:320px){
   .nav-tabs{
     background-color: #6852a1;
     position: relative;
-    left: 10px;
+    left: 0px;
     font-size: 11px;
+    width: 320px;
 
 
+  }
+
+  .spanlogo{
+    position: relative;
+    left:30px;
   }
 
   

@@ -1,6 +1,9 @@
 mat-card{
   background-color: #4E342E;
   width: 100%;
+  position: relative;
+  bottom: 700px;
+  z-index: -1;
 }
 
 mat-toolbar{
