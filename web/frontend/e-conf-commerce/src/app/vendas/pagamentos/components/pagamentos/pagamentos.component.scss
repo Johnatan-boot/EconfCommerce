@@ -1,0 +1,36 @@
+.containerPagamentos{
+  width: 450px;
+  height: 200px;
+  border-radius: 18px;
+  position: relative;
+  bottom: 800px;
+  right:50px;
+  color:white;
+  font-family: segoe script;
+  background-color: rgb(83, 49, 49);
+
+}
+
+h2{
+  color:white;
+  font-family: segoe script;
+  position: relative;
+  left: 165px;
+}
+
+p{
+  position: relative;
+  left: 24px;
+}
+button{
+  width: 395px;
+  height: 60px;
+  border-radius: 30px;
+  border: 2px solid grey;
+  background-color: aqua;
+  color:white;
+  font-size: 16px;
+  font-weight: bold;
+  position: relative;
+  left: 24px;
+}

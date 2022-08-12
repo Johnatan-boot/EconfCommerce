@@ -21,7 +21,7 @@ export class ClientesListComponent implements OnInit {
   telefone:'2222-4444',endereco:'rua da Lara',cidade:'Taboao Da Serra',estado:'SP',email:'lara@mail.com'}
  ];*/
 
-  displayedColumns: string[] = ['nome', 'cpf', 'telefone',
+  displayedColumns: string[] = ['nome', 'cpf','cnpj', 'telefone',
    'endereco','cidade','estado','email','actions'];
 
   constructor(

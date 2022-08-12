@@ -21,9 +21,15 @@ export class ClientesService {
       );
   }
 
-  save(record: Partial<Clientes>) {
+ /* save(record: Partial<Clientes>) {
     return this.httpClient.post<Clientes>(this.API, record).pipe(first());
-  }
+  }*/
+
+  //metodo responsavel Por receber o Registro
+  save(record:Clientes){
+    console.log(record);
+    return this.httpClient.post<Clientes>(this.API, record).pipe(first());
+    }
 
 
 

@@ -8,17 +8,21 @@
 
 .container-fluid{
     position: relative;
-    left: 350px;
-    bottom: 450px;
+    left: 180px;
+    bottom: 190px;
   }
 
   .card_form_cadpf{
     position: relative;
-    bottom: 500px;
+    bottom: 600px;
     background-color: #B39DDB;
     border-radius: 30px;
     border: 2px solid grey;
+    height: 350px;
   }
+
+
+ 
 
 
 
@@ -32,11 +36,17 @@
     font-weight: bold;
     color: #4E342E;
     height:40px;
+    position: relative;
+    top: 10px;
+    right: 160px;
 
   }
 
   .btnVoltar{
-    padding-top: 9px;
+    position: relative;
+    top: 10px;
+    right: 160px;
+  padding-top: 9px;
    background-color: #4E342E;
    width: 100px;
   font-family: segoe script;
@@ -64,7 +74,39 @@
       left: 0px;
     }
 
-   
+    .mat-button{
+      background-color: #93d1f4;
+      margin: 2px;
+      border-radius: 10px;
+      width: 100px;
+      font-family: segoe script;
+      font-size: 14px;
+      font-weight: bold;
+      color: #4E342E;
+      height:40px;
+      position: relative;
+      top: 10px;
+      right: 10px;
+  
+    }
+  
+    .btnVoltar{
+      position: relative;
+      top: 10px;
+      left: 30px;
+    padding-top: 9px;
+     background-color: #4E342E;
+     width: 100px;
+    font-family: segoe script;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    height: 23px;
+    font-size: 14px;
+    height:40px;
+    }
+
+
   }
 
 
@@ -75,5 +117,5 @@
       bottom: 123px;
     }
 
-    
+
   }

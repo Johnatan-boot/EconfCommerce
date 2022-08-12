@@ -6,6 +6,11 @@ export class CadastroPf {
 		public email: string,
 		public senha: string,
 		public cpf: string,
-		public cnpj: string) {}
+		public cnpj: string,
+    public estado: string,
+    public cidade: string,
+    public endereco: string,
+    public telefone: string
+     ) {}
 
 }

@@ -1,3 +1,6 @@
+import { CarrinhoComprasModule } from './vendas/carrinhoCompras/carrinho-compras.module';
+import { PagamentosModule } from './vendas/pagamentos/pagamentos.module';
+import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { CadastroPjModule, CadastroPjRoutingModule } from './cadastro';
 import { CadastroPfModule, CadastroPfRoutingModule } from './cadastro';
 import { ClientesModule, ClientesRoutingModule } from './clientes';
@@ -18,6 +21,8 @@ import { HttpClientModule } from '@angular/common/http';
 import { MatDialogModule } from '@angular/material/dialog';
 import { BolosModule } from './bolos';
 import { BolosRoutingModule } from './bolos/bolos-routing.module';
+import { PagamentosRoutingModule } from './vendas/pagamentos/pagamentos-routing.module';
+import { CarrinhoComprasRoutingModule } from './vendas/carrinhoCompras';
 
 @NgModule({
   declarations: [
@@ -25,15 +30,20 @@ import { BolosRoutingModule } from './bolos/bolos-routing.module';
     NavbarComponent,
     SidebarComponent,
 
+
   ],
   imports: [
     BrowserModule,
     NgbModule,
     AppMaterialModule,
+    CarrinhoComprasModule,
+    CarrinhoComprasRoutingModule,
     MatCardModule,
     MatToolbarModule,
     HttpClientModule,
     MatDialogModule,
+    PagamentosModule,
+    PagamentosRoutingModule,
     CadastroPjModule,
     CadastroPjRoutingModule,
     BolosModule,
@@ -49,6 +59,7 @@ import { BolosRoutingModule } from './bolos/bolos-routing.module';
     //Raiz
     AppRoutingModule,
     BrowserAnimationsModule,
+    MatSnackBarModule,
 
   ],
   providers: [],

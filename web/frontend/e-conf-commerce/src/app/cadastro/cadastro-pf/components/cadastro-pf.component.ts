@@ -1,3 +1,4 @@
+import { ClientesService } from 'src/app/services';
 import { CnpjValidator } from 'src/app/shared';
 import { CpfValidator } from 'src/app/shared';
 import { CadastroPfService } from './../../../services';
@@ -21,7 +22,8 @@ export class CadastroPfComponent implements OnInit {
     private fb: FormBuilder,
   	private snackBar: MatSnackBar,
     private router: Router,
-    private cadastroPfService: CadastroPfService
+    private cadastroPfService: CadastroPfService,
+    private clientesService: ClientesService
   ) { }
 
   ngOnInit() {
@@ -33,13 +35,18 @@ export class CadastroPfComponent implements OnInit {
   	this.form = this.fb.group({
   		nome: ['', [Validators.required, Validators.minLength(3)]],
   		email: ['', [Validators.required, Validators.email]],
-  		senha: ['', [Validators.required, Validators.minLength(6)]],
+      telefone: [null],
+      endereco: [null],
+      cidade:  [null],
+      estado:  [null],
+      senha:  [null],
   		cpf: ['', [Validators.required, CpfValidator]],
   		cnpj: ['', [Validators.required, CnpjValidator]]
   	});
   }
 
-  cadastrarPf() {
+  cadastroPf() {
+    //console.log("cadastrar-pf");
   	if (this.form.invalid) {
       return;
     }
@@ -62,6 +69,21 @@ export class CadastroPfComponent implements OnInit {
       );
   	return false;
   }
+onSubmit(){
+  this.clientesService.save(this.form.value).subscribe(data => console.log(data), err => {
+    let msg: string = "Tente novamente em instantes.";
+    if (err.status == 400) {
+      msg = err.error.errors.join(' ');
+    }
+    this.snackBar.open(msg, "Erro", { duration: 5000 });
+    this.onError();
+  
+  });
+}
 
+private onError(){
+  let msg2: string = "Tente novamente em instantes.";
+  this.snackBar.open(msg2, "Erro", { duration: 5000 });
+}
 
 }

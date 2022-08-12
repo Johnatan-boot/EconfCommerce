@@ -1,3 +1,4 @@
+import { Clientes } from 'src/app/models';
 import { environment as env } from './../../../../environments/environment';
 import { CadastroPf } from './../../../models';
 import { Injectable } from '@angular/core';
@@ -14,6 +15,11 @@ export class CadastroPfService {
 
   cadastrar(cadastroPf: CadastroPf): Observable<any> {
   	  return this.http.post(env.baseApiUrl + this.PATH, cadastroPf);
+  }
+
+//metodo responsavel Por receber o Registro
+  save(record:Clientes){
+  console.log(record);
   }
 
 }

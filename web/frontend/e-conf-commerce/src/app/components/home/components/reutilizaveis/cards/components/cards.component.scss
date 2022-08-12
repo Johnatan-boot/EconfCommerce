@@ -1,3 +1,18 @@
+.contador p{
+  width: 30px;
+  height: 30px;
+  background-color: #4E342E;
+  color:white;
+  position: relative;
+  bottom: 3550px;
+  left: 1250px;
+  border-radius: 12px;
+}
+.valor0{
+ padding-left: 12px;
+ padding-top: 6px;
+}
+
 .container{
   position: relative;
   right: 10px;
@@ -12,6 +27,16 @@ mat-card{
   background-color: #4E342E;
   border-radius: 10px;
   border: 2px solid grey;
+}
+
+.card_body{
+  height: 0px;
+}
+
+.titulo_Card,.subtitulo_Card{
+  color: white;
+  font-family: segoe script;
+  font-size:11px;
 }
 
 .card-1{
@@ -29,7 +54,7 @@ mat-card{
   position: relative;
   left: 720px;
   bottom: 1420px;
-  z-index: -1;
+  //z-index: -1;
 
 }
 

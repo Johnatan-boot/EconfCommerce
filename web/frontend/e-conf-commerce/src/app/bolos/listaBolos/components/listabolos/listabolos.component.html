@@ -1,0 +1,33 @@
+<!--<table class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">Imagem</th>
+        <th scope="col">Tipo Bolo</th>
+         <th scope="col">Nome</th>
+          <th>Quantidade</th>
+        <th scope="col">Preço Unitario</th>
+        <th scope="col">Stoque</th>
+        <th scope="col"></th>
+      </tr>
+    </thead>
+    <tbody>
+      <ng-container *ngFor="let bolo of bolos">
+        <tr *ngIf="bolo.stock>0" [ngClass]="{'clearance': bolo.clearance}">
+            <td><img [src]="bolo.imageUrl" [alt]="bolo.name"></td>
+            <td>{{bolo.tipoBolo}}</td>
+            <td>{{bolo.nome}}</td>
+            <td>{{bolo.codigo}}</td>
+            <td>{{bolo.quantidade}}</td>
+            <td>{{bolo.peso}}</td>
+            <td>{{bolo.preco | currency:'BR'}}</td>
+            <td>
+              <div class="input-group input-group-sm mb-3">
+                <button type="button" class="btn btn-light btn-sm" (click)="downQuantity(beer)">-</button>
+                <input class="form-control form-control-sm" type="number" [(ngModel)]="beer.quantity" (focusout)="verifyBeerQuantity(bolo)"/>
+                <button type="button" class="btn btn-light btn-sm" (click)="upQuantity(beer)" >+</button>
+              </div>
+            </td>
+        </tr>
+      </ng-container>
+    </tbody>
+  </table>-->

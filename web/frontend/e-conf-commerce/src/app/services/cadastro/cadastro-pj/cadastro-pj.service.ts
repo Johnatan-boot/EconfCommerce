@@ -8,7 +8,7 @@ import { environment as env } from '../../../../environments/environment';
 @Injectable()
 export class CadastroPjService {
 
-  private readonly PATH: string = 'cadastrar-pj';
+  private readonly PATH: string = 'cadastro-pj';
 
   constructor(private http: HttpClient) { }
 
