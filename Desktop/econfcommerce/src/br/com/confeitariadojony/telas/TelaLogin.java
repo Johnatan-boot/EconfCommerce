@@ -65,6 +65,76 @@ public class TelaLogin extends javax.swing.JFrame {
                     TelaPrincipal.lblUsuario.setText(rs.getString(2));
                     TelaPrincipal.lblUsuario.setForeground(Color.red);
                      
+                 }else if (perfil.equals("TI")) {
+                       //Instanciando um Objeto
+                     //Abrir a Tela Principal
+                     TelaPrincipal principal = new TelaPrincipal();
+                     principal.setVisible(true);
+                    //Campo desabilitado vou habilitar fornecendo acesso aos campos bloqueados
+                    TelaPrincipal.menRelVen.setEnabled(true);
+                    TelaPrincipal.menCadUsu.setEnabled(true);
+                    //Ação de fechar a tela Login Para acesso a tela principal
+                    this.dispose();
+                    //Setando o campo usuario pelo campo Administrador ou Usuario substituicao 
+                    //da label escrita usuario pelo usuario que esta entrando no sistema
+                    TelaPrincipal.lblUsuario.setText(rs.getString(2));
+                    TelaPrincipal.lblUsuario.setForeground(Color.green);
+                 }else if (perfil.equals("Vendedor")) {
+                       //Instanciando um Objeto
+                     //Abrir a Tela Principal
+                     TelaPrincipal principal = new TelaPrincipal();
+                     principal.setVisible(true);
+                    //Campo desabilitado vou habilitar fornecendo acesso aos campos bloqueados
+                    TelaPrincipal.menRelVen.setEnabled(false);
+                    TelaPrincipal.menCadUsu.setEnabled(false);
+                    //Ação de fechar a tela Login Para acesso a tela principal
+                    this.dispose();
+                    //Setando o campo usuario pelo campo Administrador ou Usuario substituicao 
+                    //da label escrita usuario pelo usuario que esta entrando no sistema
+                    TelaPrincipal.lblUsuario.setText(rs.getString(2));
+                    TelaPrincipal.lblUsuario.setForeground(Color.blue);
+                 }else if (perfil.equals("Adm")) {
+                       //Instanciando um Objeto
+                     //Abrir a Tela Principal
+                     TelaPrincipal principal = new TelaPrincipal();
+                     principal.setVisible(true);
+                    //Campo desabilitado vou habilitar fornecendo acesso aos campos bloqueados
+                     TelaPrincipal.menRelVen.setEnabled(false);
+                    TelaPrincipal.menCadUsu.setEnabled(false);
+                    //Ação de fechar a tela Login Para acesso a tela principal
+                    this.dispose();
+                    //Setando o campo usuario pelo campo Administrador ou Usuario substituicao 
+                    //da label escrita usuario pelo usuario que esta entrando no sistema
+                    TelaPrincipal.lblUsuario.setText(rs.getString(2));
+                    TelaPrincipal.lblUsuario.setForeground(Color.yellow);
+                 }else if (perfil.equals("Gerente")) {
+                       //Instanciando um Objeto
+                     //Abrir a Tela Principal
+                     TelaPrincipal principal = new TelaPrincipal();
+                     principal.setVisible(true);
+                    //Campo desabilitado vou habilitar fornecendo acesso aos campos bloqueados
+                    TelaPrincipal.menRelVen.setEnabled(false);
+                    TelaPrincipal.menCadUsu.setEnabled(false);
+                    //Ação de fechar a tela Login Para acesso a tela principal
+                    this.dispose();
+                    //Setando o campo usuario pelo campo Administrador ou Usuario substituicao 
+                    //da label escrita usuario pelo usuario que esta entrando no sistema
+                    TelaPrincipal.lblUsuario.setText(rs.getString(2));
+                    TelaPrincipal.lblUsuario.setForeground(Color.darkGray);
+                 }else if (perfil.equals("RH")) {
+                       //Instanciando um Objeto
+                     //Abrir a Tela Principal
+                     TelaPrincipal principal = new TelaPrincipal();
+                     principal.setVisible(true);
+                    //Campo desabilitado vou habilitar fornecendo acesso aos campos bloqueados
+                    TelaPrincipal.menRelVen.setEnabled(false);
+                    TelaPrincipal.menCadUsu.setEnabled(false);
+                    //Ação de fechar a tela Login Para acesso a tela principal
+                    this.dispose();
+                    //Setando o campo usuario pelo campo Administrador ou Usuario substituicao 
+                    //da label escrita usuario pelo usuario que esta entrando no sistema
+                    TelaPrincipal.lblUsuario.setText(rs.getString(2));
+                    TelaPrincipal.lblUsuario.setForeground(Color.magenta);
                  }else{
                      //Abrir a Tela Principal
                      TelaPrincipal principal = new TelaPrincipal();
@@ -82,6 +152,7 @@ public class TelaLogin extends javax.swing.JFrame {
                  JOptionPane.showMessageDialog(null,"Usuario e Senha Invalido(s)!");
              }
             
+                 
         } catch (Exception e) {
             JOptionPane.showMessageDialog(null, e);
             
