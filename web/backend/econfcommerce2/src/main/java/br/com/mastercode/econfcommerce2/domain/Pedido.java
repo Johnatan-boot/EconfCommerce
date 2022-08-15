@@ -44,7 +44,7 @@ public class Pedido implements Serializable {
 	@ManyToOne
 	@JoinColumn(name = "cliente_id")
 	private Cliente cliente;
-	public Pedido() {
+	public Pedido(Object object, Prioridade media, Status andamento, String string, String string2, Pedido vend1, Cliente cli1) {
 		super();
 		// TODO Auto-generated constructor stub
 	}
