@@ -23,6 +23,7 @@ import { BolosModule } from './bolos';
 import { BolosRoutingModule } from './bolos/bolos-routing.module';
 import { PagamentosRoutingModule } from './vendas/pagamentos/pagamentos-routing.module';
 import { CarrinhoComprasRoutingModule } from './vendas/carrinhoCompras';
+import { CartModule, CartRoutingModule } from './vendas/cart';
 
 @NgModule({
   declarations: [
@@ -36,12 +37,15 @@ import { CarrinhoComprasRoutingModule } from './vendas/carrinhoCompras';
     BrowserModule,
     NgbModule,
     AppMaterialModule,
-    CarrinhoComprasModule,
-    CarrinhoComprasRoutingModule,
     MatCardModule,
     MatToolbarModule,
     HttpClientModule,
     MatDialogModule,
+
+    CartModule,
+    CartRoutingModule,
+    CarrinhoComprasModule,
+    CarrinhoComprasRoutingModule,
     PagamentosModule,
     PagamentosRoutingModule,
     CadastroPjModule,

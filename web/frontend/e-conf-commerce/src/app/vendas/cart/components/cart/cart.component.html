@@ -1,0 +1,25 @@
+<h3>Carrito de Compras</h3>
+<table class="table table-primary table-striped">
+  <thead>
+    <tr>
+      <th>Bolos</th>
+      <th>Quantidade</th>
+      <th>Preco Unitario</th>
+    </tr>
+  </thead>
+  <tbody>
+    <ng-container *ngFor="let bolo of bolos">
+    <tr>
+      <td>{{bolo.tipoBolo}}</td>
+      <td>{{bolo.nome}}</td>
+      <td>{{bolo.qunatidade}}</td>
+      <td>{{bolo.preco | currency:'ARS'}}</td>
+    </tr>
+    </ng-container>
+  </tbody>
+</table>
+
+<p class="text-end">Total {{total() | currency:'ARS'}}</p>
+<div class="text-end">
+    <button >Comprar</button>
+</div>
