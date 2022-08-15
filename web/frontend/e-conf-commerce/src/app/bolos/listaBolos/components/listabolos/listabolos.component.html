@@ -1,10 +1,12 @@
-<!--<table class="table table-striped">
+<table class="table table-striped">
     <thead>
       <tr>
         <th scope="col">Imagem</th>
         <th scope="col">Tipo Bolo</th>
          <th scope="col">Nome</th>
-          <th>Quantidade</th>
+         <th scope="col">Codigo</th>
+          <th scope="col">Quantidade</th>
+          <th scope="col">Peso</th>
         <th scope="col">Preço Unitario</th>
         <th scope="col">Stoque</th>
         <th scope="col"></th>
@@ -13,13 +15,14 @@
     <tbody>
       <ng-container *ngFor="let bolo of bolos">
         <tr *ngIf="bolo.stock>0" [ngClass]="{'clearance': bolo.clearance}">
-            <td><img [src]="bolo.imageUrl" [alt]="bolo.name"></td>
+            <td><img [src]="bolo.imageUrl" [alt]="bolo.nome" height="40px" width="40px"></td>
             <td>{{bolo.tipoBolo}}</td>
             <td>{{bolo.nome}}</td>
             <td>{{bolo.codigo}}</td>
             <td>{{bolo.quantidade}}</td>
             <td>{{bolo.peso}}</td>
-            <td>{{bolo.preco | currency:'BR'}}</td>
+            <td>{{bolo.preco | currency:'R$'}}</td>
+            <td>{{bolo.stock}}</td>
             <td>
               <div class="input-group input-group-sm mb-3">
                 <button type="button" class="btn btn-light btn-sm" (click)="downQuantity(beer)">-</button>
@@ -30,4 +33,4 @@
         </tr>
       </ng-container>
     </tbody>
-  </table>-->
+  </table>

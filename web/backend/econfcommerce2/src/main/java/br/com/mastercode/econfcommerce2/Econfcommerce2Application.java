@@ -1,24 +1,42 @@
 package br.com.mastercode.econfcommerce2;
 
+import java.util.Iterator;
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
+import org.springframework.stereotype.Repository;
 
-import br.com.mastercode.econfcommerce2.model.Cliente;
+import br.com.mastercode.econfcommerce2.model.Clientes;
 import br.com.mastercode.econfcommerce2.repository.ClienteRepository;
+
 
 @SpringBootApplication
 public class Econfcommerce2Application {
-
+	
 	public static void main(String[] args) {
 		SpringApplication.run(Econfcommerce2Application.class, args);
+		
+		
 	}
 	@Bean
-	CommandLineRunner initDatabase(ClienteRepository clienteRepository){
+	CommandLineRunner initDatabase(
+			ClienteRepository clienteRepository
+			
+			){
 		return args ->{
+			
 			clienteRepository.deleteAll();
-			Cliente c = new Cliente();
+			Clientes c = new Clientes();
+			
+			
+
+     		
+     		
+     		
+     		
 			
 			c.setNome("João Albuquerque");
 			c.setSenha("admin123");
@@ -33,12 +51,12 @@ public class Econfcommerce2Application {
 			c.setSenhaCartC("34346721");
 			c.setSenhaCartD("11226799");
 			
-			Cliente d = new Cliente();
+			Clientes d = new Clientes();
 			d.setNome("Patricia souza");
 			d.setSenha("admin123");
             d.setCpf("12345678912");
 			d.setTelefone("112323-5546");
-			d.setEmail("joao@mail.com");
+			d.setEmail("patricia@mail.com");
 			d.setEndereco("Rua: do Patricia");
 			d.setEstado("SP");
 			d.setCidade("Cotia");
@@ -48,8 +66,11 @@ public class Econfcommerce2Application {
 			d.setSenhaCartD("11226799");
 			clienteRepository.save(c);
 			clienteRepository.save(d);
-
+			
+			
 		};
 	}
+	
+	
 
 }

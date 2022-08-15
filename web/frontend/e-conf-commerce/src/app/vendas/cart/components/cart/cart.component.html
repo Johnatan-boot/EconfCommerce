@@ -1,25 +1,32 @@
-<h3>Carrito de Compras</h3>
+<h3>Carrinho de Compras</h3>
 <table class="table table-primary table-striped">
   <thead>
     <tr>
-      <th>Bolos</th>
+      <th>Imagem</th>
+      <th>Tipo Bolos</th>
+      <th>Nome Bolos</th>
       <th>Quantidade</th>
+      <th>Codigo</th>
+      <th>Peso</th>
       <th>Preco Unitario</th>
     </tr>
   </thead>
   <tbody>
     <ng-container *ngFor="let bolo of bolos">
     <tr>
+      <img [src]="bolo.imageUrl" [alt]="bolo.nome" height="80px" width="80px">
       <td>{{bolo.tipoBolo}}</td>
       <td>{{bolo.nome}}</td>
-      <td>{{bolo.qunatidade}}</td>
+      <td>{{bolo.quantidade}}</td>
+      <td>{{bolo.codigo}}</td>
+      <td>{{bolo.peso}}</td>
       <td>{{bolo.preco | currency:'ARS'}}</td>
     </tr>
     </ng-container>
   </tbody>
 </table>
 
-<p class="text-end">Total {{total() | currency:'ARS'}}</p>
+<p class="text-end">Total {{total() | currency:'R$'}}</p>
 <div class="text-end">
     <button >Comprar</button>
 </div>

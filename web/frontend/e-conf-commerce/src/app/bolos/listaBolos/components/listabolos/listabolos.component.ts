@@ -10,7 +10,7 @@ import { BoloscartService, BolosdataService } from 'src/app/services/bolos';
 export class ListabolosComponent implements OnInit {
 
  bolos : Bolos[]  = [];
-
+ 
   constructor(private bolosDataService: BolosdataService, private bolosCartService: BoloscartService) { }
 
   ngOnInit(): void {
