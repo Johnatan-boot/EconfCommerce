@@ -35,13 +35,17 @@ export class CadastroPfComponent implements OnInit {
   	this.form = this.fb.group({
   		nome: ['', [Validators.required, Validators.minLength(3)]],
   		email: ['', [Validators.required, Validators.email]],
-      telefone: [null],
+      /*telefone: [null],
       endereco: [null],
       cidade:  [null],
       estado:  [null],
       senha:  [null],
+      numCartC:  [null],
+      numCartD:  [null],
+      senhaCartC:  [null],
+      senhaCartD:  [null],
   		cpf: ['', [Validators.required, CpfValidator]],
-  		cnpj: ['', [Validators.required, CnpjValidator]]
+  		cnpj: ['', [Validators.required, CnpjValidator]]*/
   	});
   }
 
@@ -77,7 +81,7 @@ onSubmit(){
     }
     this.snackBar.open(msg, "Erro", { duration: 5000 });
     this.onError();
-  
+
   });
 }
 

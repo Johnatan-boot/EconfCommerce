@@ -1,16 +1,16 @@
 .bannerLogin{
   position: relative;
-  right: 127px;
-  bottom:650px;
+  right: 47px;
 
-	z-index: -1;
+
+
 
 }
 
 mat-card{
   position: relative;
-  bottom: 770px;
-  left:350px;
+  bottom: 30px;
+  left:400px;
   background-color: #B39DDB;
   border-radius: 30px;
   border: 2px solid grey;
@@ -25,6 +25,10 @@ mat-card{
   font-size: 11px;
   font-weight: bold;
 
+}
+
+a:hover{
+  color: black;
 }
 
 .btnVoltar{
@@ -45,21 +49,21 @@ mat-card{
    width: 260px;
    height: 180px;
    position: relative;
-   right: 30px;
-   bottom: 700px;
+   left: 30px;
+   bottom: 320px;
 
 
   }
   mat-card{
     width: 260px;
     position: relative;
-    bottom: 750px;
-    left:18px;
+    bottom: 320px;
+    left:47px;
     background-color: #B39DDB;
     border-radius: 30px;
     border: 2px solid grey;
   }
-  
+
  }
 
 

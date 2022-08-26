@@ -4,6 +4,8 @@ import { Router } from '@angular/router';
 import { MatSnackBar } from '@angular/material/snack-bar';
 import { Login } from 'src/app/models';
 import { LoginService } from 'src/app/services';
+import { ImagesService } from 'src/app/services/images/images.service';
+import { Images } from 'src/app/models/images/images';
 
 @Component({
   selector: 'app-login',
@@ -11,11 +13,13 @@ import { LoginService } from 'src/app/services';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+  imageUrlLogin: string = './assets/bannerLogin/bannerLogin.png';
 
+  imagens: Images[] = [];
   form!: FormGroup;
 
   constructor(
-    //private imagensService: ImagensService,
+    private imagesService: ImagesService,
     private fb: FormBuilder,
     private snackBar: MatSnackBar,
     private router: Router,

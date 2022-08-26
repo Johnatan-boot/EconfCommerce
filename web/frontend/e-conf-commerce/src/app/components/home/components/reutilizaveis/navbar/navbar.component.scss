@@ -1,5 +1,7 @@
 mat-toolbar{
-  background-color:#6200EA;
+  //background-color:#7C4DFF;
+  background-color: #7d69ac;
+  //background-color:#6200EA;
   font-family: segoe script;
   color: white;
 }
@@ -7,7 +9,7 @@ mat-toolbar{
 form{
   position: relative;
   left: 730px;
-  
+
 }
 
 .btn{
@@ -23,21 +25,22 @@ form{
 
 .navbar{
   background-color: #62508f;
+
 }
 
 .nav-tabs{
   background-color: #6852a1;
   position: relative;
-  left: 10px;
+  left: 100px;
   color:white;
   border: 1px solid white;
   border-radius: 8px;
-  
+
 
 }
 .nav-tabs:hover{
   background-color: #7c6ba8;
- 
+
 
 }
 
@@ -53,22 +56,30 @@ a:hover{
 }
 
 @media(width:320px)and(width:320px){
+
+  .navbar{
+    background-color: #7d69ac;
+  
+  }
   .nav-tabs{
+
     background-color: #6852a1;
     position: relative;
-    left: 0px;
-    font-size: 11px;
-    width: 320px;
+    left: 80px;
+    font-size: 8px;
+    width: 235px;
+    height: 300px;
+    z-index:-1;
+    background-color: #7d69ac;
 
 
   }
-
-  .spanlogo{
-    position: relative;
-    left:30px;
+  li{
+    width: 300px;
   }
-
   
+
+
 
 
 

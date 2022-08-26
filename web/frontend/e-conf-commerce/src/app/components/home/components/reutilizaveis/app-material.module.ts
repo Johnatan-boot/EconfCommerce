@@ -10,10 +10,10 @@ import { MatListModule } from '@angular/material/list';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { MatIconModule } from '@angular/material/icon';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
-
-
 import { FlexLayoutModule } from '@angular/flex-layout';
 import {MatCardModule} from '@angular/material/card';
+import {MatSelectModule} from '@angular/material/select';
+
 
 @NgModule({
   declarations: [
@@ -34,8 +34,10 @@ import {MatCardModule} from '@angular/material/card';
     MatSnackBarModule,
     FlexLayoutModule,
     MatCardModule,
+    MatSelectModule,
 
   ],
+  
   providers: [
   	//LoginService,
   ]

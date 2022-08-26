@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { FormControl } from '@angular/forms';
 
 @Component({
   selector: 'app-navbar',
@@ -8,4 +9,7 @@ import { Component } from '@angular/core';
 export class NavbarComponent {
  
   active = 1;
+  toppings = new FormControl('');
+   toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
+ 
 }

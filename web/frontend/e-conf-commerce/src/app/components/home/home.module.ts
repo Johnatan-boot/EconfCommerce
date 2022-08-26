@@ -1,3 +1,4 @@
+import { CarrosselComponent } from './components/reutilizaveis/carrossel/components/carrossel';
 import { ModalModule } from './components/reutilizaveis/modal/modal.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -9,6 +10,7 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 @NgModule({
   declarations: [
     HomeComponent,
+    CarrosselComponent,
    
     
   ],
@@ -18,6 +20,9 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ModalModule,
 
 
+  ],
+  exports:[
+    CarrosselComponent
   ]
 })
 export class HomeModule { }

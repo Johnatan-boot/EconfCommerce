@@ -3,7 +3,7 @@
     <span>Confeitaria do Jony</span>
   </mat-toolbar>
 </app-navbar>
-<app-sidebar>
+<app-sidebar (onToggleSideNav)="onToggleSideNav($event)">
   <mat-card></mat-card>
 </app-sidebar>
 <router-outlet></router-outlet>

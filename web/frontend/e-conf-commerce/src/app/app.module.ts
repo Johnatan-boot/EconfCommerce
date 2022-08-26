@@ -41,7 +41,6 @@ import { CartModule, CartRoutingModule } from './vendas/cart';
     MatToolbarModule,
     HttpClientModule,
     MatDialogModule,
-
     CartModule,
     CartRoutingModule,
     CarrinhoComprasModule,
@@ -65,6 +64,9 @@ import { CartModule, CartRoutingModule } from './vendas/cart';
     BrowserAnimationsModule,
     MatSnackBarModule,
 
+  ],
+  exports:[
+    AppMaterialModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
