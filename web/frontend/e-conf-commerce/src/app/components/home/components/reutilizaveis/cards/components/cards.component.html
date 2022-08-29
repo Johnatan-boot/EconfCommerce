@@ -1,3 +1,4 @@
+<div class="content">
 <div class="container text-center">
   <div class="row">
     <div class="col-sm col-md-12 col-xl-5">
@@ -26,9 +27,11 @@
             </div>
            <div class="row">
            <!-- Button trigger modal -->
-           <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdropbl">
+           <app-modal-component type="button" class="btn_modal">
             info
-          </button>
+          </app-modal-component>
+
+
            </div>
         </div>
         </mat-card>
@@ -56,10 +59,9 @@
               <button class="btn btn-danger" (click)="decrementa()">Remover</button>
             </div>
            <div class="row">
-             <!-- Button trigger modal -->
-          <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdropbc">
-            info
-          </button>
+            <app-modalbl-component type="button" class="btn_modal">
+              info
+             </app-modalbl-component>
            </div>
         </div>
         </mat-card>
@@ -87,7 +89,10 @@
               <button class="btn btn-danger" (click)="decrementa()">Remover</button>
             </div>
            <div class="row">
-            <button class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdropbb" >Info</button>
+            <app-modalbb-component type="button" class="btn_modal">
+              info
+            </app-modalbb-component>
+
 
            </div>
         </div>
@@ -104,10 +109,46 @@
       <div class="col-sm col-md-12 col-xl-5">
         <div class="container col-xl-10">
 
+
+        <!--Bolos Com Cobertura-->
           <div class=" col-12">
             <mat-card class="card-1">
               <div class="imgcard">
-                <img  [src]=" urlBoloTrad1 " alt="Bolo tradcional">
+             <img  [src]="urlBoloCob1" alt="Bolo tradcional">
+            </div>
+            <div class="card_body">
+              <h3 class="titulo_Card">Bolos</h3>
+              <p class="subtitulo_Card">Descrição</p>
+              <ul>
+               <!--<li>1</li>
+                <li>1</li>
+                <li>1</li>-->
+              </ul>
+            </div>
+            <div class="container-btn">
+
+              <div class="row">
+                <button class="btn btn-success" (click)="incrementa()">Adicionar</button>
+                </div>
+                <div class="row">
+                  <button class="btn btn-danger" (click)="decrementa()">Remover</button>
+                </div>
+               <div class="row">
+               <!-- Button trigger modal -->
+               <app-modal-component type="button" class="btn_modal">
+                info
+              </app-modal-component>
+
+
+               </div>
+            </div>
+            </mat-card>
+           </div>
+
+           <div class="col-12">
+            <mat-card class="card-2">
+              <div class="imgcard">
+                <img  [src]=" urlBoloCob2 " alt="Bolo tradcional">
               </div>
               <div class="card_body">
                 <h3 class="titulo_Card">Bolos</h3>
@@ -126,149 +167,13 @@
                   <button class="btn btn-danger" (click)="decrementa()">Remover</button>
                 </div>
                <div class="row">
-                 <!-- Button trigger modal -->
-              <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdropbl">
-                info
-              </button>
-               </div>
-            </div>
-            </mat-card>
-           </div>
-
-           <div class="col-12">
-            <mat-card class="card-2">
-              <div class="imgcard">
-                <img  [src]=" urlBoloTrad2 " alt="Bolo tradcional">
-            </div>
-            <div class="card_body">
-              <h3 class="titulo_Card">Bolos</h3>
-              <p class="subtitulo_Card">Descrição</p>
-              <ul>
-               <!--<li>1</li>
-                <li>1</li>
-                <li>1</li>-->
-              </ul>
-            </div>
-            <div class="container-btn">
-              <div class="row">
-                <button class="btn btn-success" (click)="incrementa()">Adicionar</button>
-                </div>
-                <div class="row">
-                  <button class="btn btn-danger" (click)="decrementa()">Remover</button>
-                </div>
-               <div class="row">
-                <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdropbc">
+                <app-modalbl-component type="button" class="btn_modal">
                   info
-                 </button>
+                 </app-modalbl-component>
                </div>
             </div>
             </mat-card>
            </div>
-
-           <div class="col-12">
-            <mat-card class="card-3">
-              <div class="imgcard">
-                <img  [src]=" urlBoloTrad3 " alt="Bolo tradcional">
-            </div>
-            <div class="card_body">
-              <h3 class="titulo_Card">Bolos</h3>
-              <p class="subtitulo_Card">Descrição</p>
-              <ul>
-               <!--<li>1</li>
-                <li>1</li>
-                <li>1</li>-->
-              </ul>
-            </div>
-            <div class="container-btn">
-              <div class="row">
-                <button class="btn btn-success" (click)="incrementa()">Adicionar</button>
-                </div>
-                <div class="row">
-                  <button class="btn btn-danger" (click)="decrementa()">Remover</button>
-                </div>
-               <div class="row">
-               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdropbb">
-                info
-              </button>
-
-               </div>
-            </div>
-
-            </mat-card>
-           </div>
-        </div>
-
-      <div class="container text-center">
-        <div class="row3">
-          <div class="col-sm col-md-12 col-xl-5">
-          <div class="container col-xl-10">
-
-           <div class="col-12">
-            <mat-card class="card-1">
-              <div class="imgcard">
-                <img  [src]=" urlBoloCob1 " alt="Bolo tradcional">
-            </div>
-            <div class="card_body">
-              <h3 class="titulo_Card">Bolos</h3>
-              <p class="subtitulo_Card">Descrição</p>
-              <ul>
-               <!--<li>1</li>
-                <li>1</li>
-                <li>1</li>-->
-              </ul>
-            </div>
-            <div class="container-btn">
-              <div class="row">
-                <button class="btn btn-success" (click)="incrementa()">Adicionar</button>
-                </div>
-                <div class="row">
-                  <button class="btn btn-danger" (click)="decrementa()">Remover</button>
-                </div>
-               <div class="row">
-               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdropbb">
-                info
-              </button>
-
-               </div>
-            </div>
-
-            </mat-card>
-           </div>
-
-           <div class="col-12">
-            <mat-card class="card-2">
-              <div class="imgcard">
-                <img  [src]=" urlBoloCob2 " alt="Bolo tradcional">
-            </div>
-            <div class="card_body">
-              <h3 class="titulo_Card">Bolos</h3>
-              <p class="subtitulo_Card">Descrição</p>
-              <ul>
-               <!--<li>1</li>
-                <li>1</li>
-                <li>1</li>-->
-              </ul>
-            </div>
-            <div class="container-btn">
-              <div class="row">
-                <button class="btn btn-success" (click)="incrementa()">Adicionar</button>
-                </div>
-                <div class="row">
-                  <button class="btn btn-danger" (click)="decrementa()">Remover</button>
-                </div>
-               <div class="row">
-               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdropbb">
-                info
-              </button>
-
-               </div>
-            </div>
-
-            </mat-card>
-            </div>
 
            <div class="col-12">
             <mat-card class="card-3">
@@ -292,31 +197,29 @@
                   <button class="btn btn-danger" (click)="decrementa()">Remover</button>
                 </div>
                <div class="row">
-               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdropbb">
-                info
-              </button>
+                <app-modalbb-component type="button" class="btn_modal">
+                  info
+                </app-modalbb-component>
+
 
                </div>
             </div>
-
             </mat-card>
-          </div>
-
-          </div>
-          </div>
+           </div>
         </div>
-      </div>
+      <!--Bolos Com Cobertura-->
+
+      <!--Bolos Para Festas-->
 
       <div class="container text-center">
-        <div class="row4">
+        <div class="row3">
           <div class="col-sm col-md-12 col-xl-5">
           <div class="container col-xl-10">
 
            <div class="col-12">
             <mat-card class="card-1">
               <div class="imgcard">
-                <img  [src]=" urlBoloBf1 " alt="Bolo tradcional">
+             <img  [src]=" urlBoloBf1 " alt="Bolo tradcional">
             </div>
             <div class="card_body">
               <h3 class="titulo_Card">Bolos</h3>
@@ -328,6 +231,7 @@
               </ul>
             </div>
             <div class="container-btn">
+
               <div class="row">
                 <button class="btn btn-success" (click)="incrementa()">Adicionar</button>
                 </div>
@@ -336,13 +240,13 @@
                 </div>
                <div class="row">
                <!-- Button trigger modal -->
-              <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdropbb">
+               <app-modal-component type="button" class="btn_modal">
                 info
-              </button>
+              </app-modal-component>
+
 
                </div>
             </div>
-
             </mat-card>
            </div>
 
@@ -350,16 +254,16 @@
             <mat-card class="card-2">
               <div class="imgcard">
                 <img  [src]=" urlBoloBf2 " alt="Bolo tradcional">
-            </div>
-            <div class="card_body">
-              <h3 class="titulo_Card">Bolos</h3>
-              <p class="subtitulo_Card">Descrição</p>
-              <ul>
-               <!--<li>1</li>
-                <li>1</li>
-                <li>1</li>-->
-              </ul>
-            </div>
+              </div>
+              <div class="card_body">
+                <h3 class="titulo_Card">Bolos</h3>
+                <p class="subtitulo_Card">Descrição</p>
+                <ul>
+                 <!--<li>1</li>
+                  <li>1</li>
+                  <li>1</li>-->
+                </ul>
+              </div>
             <div class="container-btn">
               <div class="row">
                 <button class="btn btn-success" (click)="incrementa()">Adicionar</button>
@@ -368,14 +272,11 @@
                   <button class="btn btn-danger" (click)="decrementa()">Remover</button>
                 </div>
                <div class="row">
-               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdropbb">
-                info
-              </button>
-
+                <app-modalbl-component type="button" class="btn_modal">
+                  info
+                 </app-modalbl-component>
                </div>
             </div>
-
             </mat-card>
             </div>
 
@@ -401,14 +302,13 @@
                   <button class="btn btn-danger" (click)="decrementa()">Remover</button>
                 </div>
                <div class="row">
-               <!-- Button trigger modal -->
-              <button type="button" class="btn btn-info" data-bs-toggle="modal" data-bs-target="#staticBackdropbb">
-                info
-              </button>
+                <app-modalbb-component type="button" class="btn_modal">
+                  info
+                </app-modalbb-component>
+
 
                </div>
             </div>
-
             </mat-card>
           </div>
 
@@ -416,6 +316,114 @@
           </div>
         </div>
       </div>
+    <!--Bolos Para Festas-->
+
+      <div class="container text-center">
+        <div class="row4">
+          <div class="col-sm col-md-12 col-xl-5">
+          <div class="container col-xl-10">
+
+           <div class="col-12">
+            <mat-card class="card-1">
+              <div class="imgcard">
+             <img  [src]=" urlBoloTrad1 " alt="Bolo tradcional">
+            </div>
+            <div class="card_body">
+              <h3 class="titulo_Card">Bolos</h3>
+              <p class="subtitulo_Card">Descrição</p>
+              <ul>
+               <!--<li>1</li>
+                <li>1</li>
+                <li>1</li>-->
+              </ul>
+            </div>
+            <div class="container-btn">
+
+              <div class="row">
+                <button class="btn btn-success" (click)="incrementa()">Adicionar</button>
+                </div>
+                <div class="row">
+                  <button class="btn btn-danger" (click)="decrementa()">Remover</button>
+                </div>
+               <div class="row">
+               <!-- Button trigger modal -->
+               <app-modal-component type="button" class="btn_modal">
+                info
+              </app-modal-component>
+
+
+               </div>
+            </div>
+            </mat-card>
+           </div>
+
+           <div class="col-12">
+            <mat-card class="card-2">
+              <div class="imgcard">
+                <img  [src]=" urlBoloTrad2 " alt="Bolo tradcional">
+              </div>
+              <div class="card_body">
+                <h3 class="titulo_Card">Bolos</h3>
+                <p class="subtitulo_Card">Descrição</p>
+                <ul>
+                 <!--<li>1</li>
+                  <li>1</li>
+                  <li>1</li>-->
+                </ul>
+              </div>
+            <div class="container-btn">
+              <div class="row">
+                <button class="btn btn-success" (click)="incrementa()">Adicionar</button>
+                </div>
+                <div class="row">
+                  <button class="btn btn-danger" (click)="decrementa()">Remover</button>
+                </div>
+               <div class="row">
+                <app-modalbl-component type="button" class="btn_modal">
+                  info
+                 </app-modalbl-component>
+               </div>
+            </div>
+            </mat-card>
+            </div>
+
+           <div class="col-12">
+            <mat-card class="card-3">
+              <div class="imgcard">
+                <img  [src]=" urlBoloTrad3 " alt="Bolo tradcional">
+            </div>
+            <div class="card_body">
+              <h3 class="titulo_Card">Bolos</h3>
+              <p class="subtitulo_Card">Descrição</p>
+              <ul>
+               <!--<li>1</li>
+                <li>1</li>
+                <li>1</li>-->
+              </ul>
+            </div>
+            <div class="container-btn">
+              <div class="row">
+                <button class="btn btn-success" (click)="incrementa()">Adicionar</button>
+                </div>
+                <div class="row">
+                  <button class="btn btn-danger" (click)="decrementa()">Remover</button>
+                </div>
+               <div class="row">
+                <app-modalbb-component type="button" class="btn_modal">
+                  info
+                </app-modalbb-component>
+
+
+               </div>
+            </div>
+            </mat-card>
+          </div>
+
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
 

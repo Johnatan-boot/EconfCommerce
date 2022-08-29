@@ -42,18 +42,18 @@ mat-card{
 .card-1{
   position: relative;
 
-  bottom: 620px;
+  bottom: 20px;
 }
 .card-2{
   position: relative;
   left: 360px;
-  bottom: 1020px;
+  bottom: 415px;
 
 }
 .card-3{
   position: relative;
   left: 720px;
-  bottom: 1420px;
+  bottom: 815px;
   //z-index: -1;
 
 }
@@ -65,8 +65,9 @@ mat-card{
 }
 
 
-.btn-success,.btn-danger,.btn-info{
+.btn-success,.btn-danger,.btn_modal{
   width: 80px;
+  margin-left: 8px;
   font-family: segoe script;
   font-size: 12px;
   margin-top: 10px;
@@ -81,12 +82,14 @@ mat-card{
 .btn-danger{
   position: relative;
   top: 90px;
-  left: 88px;
+  left: 94px;
 }
-.btn-info{
+.btn_modal{
   position: relative;
-  top: 48px;
-  left: 174px;
+  top: 44px;
+  left: 170px;
+  font-size: 9px;
+  height: 10px;
 }
 
 
@@ -121,28 +124,66 @@ mat-card img{
 
 
 @media(min-width:320px)and(max-width:720px){
-  mat-card{
-    width: 100%;
+  .content{
+
     position: relative;
-    left: 20px;
-    bottom: 50px;
+    overflow: auto;
+    height: 252px;
+    width: 320px;
+    bottom: 385px;
+    left: -60px;
+    }
+  mat-card{
+    width: 260px;
+    position: relative;
+    left: -8px;
+    bottom: 950px;
   }
   mat-card img{
     height: 200px;
     width: 234px;
+    bottom: 910px;
+
     background-color: grey;
   }
 
+  .card-1{
+    position: relative;
+    //left: 120px;
+    bottom: 410px;
+
+  }
   .card-2{
     position: relative;
-    left: 20px;
-    bottom: 610px;
+    left: -11px;
+    bottom: 400px;
 
   }
   .card-3{
     position: relative;
-    left: 20px;
-    bottom: 600px;
+    right: 0px;
+    bottom: 2700px;
+    margin-bottom:10px;
+
+  }
+  .card-4{
+    position: relative;
+    right: 0px;
+    bottom: 700px;
+    margin-bottom:10px;
+
+  }
+  .card-5{
+    position: relative;
+    right: 0px;
+    bottom: 100px;
+    margin-bottom:10px;
+
+  }
+  .card-6{
+    position: relative;
+    right: 0px;
+    bottom: 100px;
     margin-bottom:10px;
 
   }
@@ -154,6 +195,17 @@ mat-card img{
 
   .row2{
     position: relative;
-    top: 20px;
+    bottom: 390px;
+
+  }
+  .row3{
+    position: relative;
+    bottom: 390px;
+    left: -8px;
+  }
+  .row4{
+    position: relative;
+    bottom: 790px;
+    left: -8px;
   }
 }

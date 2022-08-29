@@ -9,7 +9,7 @@ import { Images } from 'src/app/models/images/images';
 export class BolostradcionaisComponent implements OnInit {
   imagens: Images[] = [];
 
-  //urlBoloTrad1:string = './src/assets/bolotradcional/slidebolot12Alt.png';
+  urlBannerBoloT:string = './assets/bolotradcional/slidebolot13Alt.png';
 
   constructor() { }
 

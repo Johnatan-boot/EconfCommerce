@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoloscoberturaComponent implements OnInit {
 
+  imgUrlBannerBoloCob: string = './assets/bannercadastro/bannerCadastro.png';
+
   constructor() { }
 
   ngOnInit(): void {

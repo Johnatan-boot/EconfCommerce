@@ -1,13 +1,34 @@
 .bannerBolosFestas{
   position: relative;
-  bottom: 708px;
+  bottom: 52px;
+  right: 50px;
   z-index:-1;
 }
 
 h2{
     position:relative;
-    bottom:680px;
+    bottom:40px;
     text-align: center;
     font-family:segoe script;
     color: white;
+}
+
+@media(min-width:320px)and(max-width:720px){
+  .bannerBolosFestas{
+    width: 250px;
+    height: 180px;
+    position: relative;
+    bottom: 370px;
+    right: 60px;
+    z-index:-1;
+  }
+
+  h2{
+    position:relative;
+    bottom:370px;
+    text-align: center;
+    font-size: 13px;
+    font-family:segoe script;
+    color: white;
+}
 }

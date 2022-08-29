@@ -6,15 +6,35 @@
 
 .bannerbolos{
   position: relative;
-  bottom: 708px;
+  bottom: 58px;
+  right: 120px;
   z-index: -1;
 }
 
 
+mat-card{
+  width: 320px;
+  border-radius: 20px;
+  height: 280px;
+  border: 2px solid grey;
+  margin-bottom: 20px;
+  position: relative;
+  bottom: 250px;
+  right: 30px;
+  background-color: #5D4037;
+  color: white;
+  font-size: 18px;
+  font-family: segoe script;
+  text-align: center;
+}
+
+a{
+  text-decoration: none;
+}
 
 
 .container {
-  
+
   position: relative;
   bottom: 900px;
   right: 100px;
@@ -75,60 +95,46 @@ h2{
 
 
 @media(min-width:320px) and(max-width:720px){
-  .container {
-    position: relative;
-    bottom: 900px;
-    right: 100px;
-    height: 300px;
+  .content{
 
-  }
-  .container img{
-    position: relative;
-    top: 10px;
-    right: 100px;
-    height: 300px;
-    width: 550px;
-
-  }
-
- .containerProd{
   position: relative;
-  left: 100px;
-  
- }
-
-  .containerPro{
-    position: relative;
-    left: 100px;
+  overflow: auto;
+  height: 252px;
+  width: 320px;
+  bottom: 360px;
+  right: 60px;
   }
-  .containerNov{
+  .bannerbolos{
     position: relative;
-    top: 210px;
-    right: 30px;
-    left: 90px;
-    width: 320px;
+    bottom: 368px;
+    right: 60px;
+    z-index: -1;
+    width: 250px;
+    height: 210px;
+    border-radius: 15px;
+    border: 2px solid grey;
   }
-  .containerNov img{
+
+  mat-card{
+    margin-top: 20px;
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    height: 280px;
+    border: 2px solid grey;
+    margin-bottom: 10px;
     position: relative;
-    margin-top: 0px;
-
-
-  }
-  .container_P{
+    top: 830px;
+    right: 2px;
     background-color: #5D4037;
-   width: 295px;
-    position: relative;
-    left: 100px;
-    bottom: 70px;
-    height: 288px;
-    border-radius: 18px;
-    border: 2px solid grey;
+    color: white;
+    font-size: 18px;
+    font-family: segoe script;
+    text-align: center;
   }
 
-#imagens_Carrosel{
-    border-radius: 80px;
-    border: 2px solid grey;
-  }
+
+
 }
 
 

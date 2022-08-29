@@ -1,13 +1,43 @@
 .bannerbolos{
   position: relative;
-  bottom: 708px;
+  bottom: 55px;
+  right: 45px;
   z-index: -1;
 }
 
 h2{
   position:relative;
-  bottom:680px;
+  bottom:55px;
   text-align: center;
   font-family:segoe script;
   color: white;
+}
+
+@media(min-width:320px) and (max-width:720px){
+  .bannerbolos{
+    width: 250px;
+    height: 180px;
+    position: relative;
+    bottom: 370px;
+    right: 65px;
+    z-index: -1;
+  }
+  h2{
+    position:relative;
+    bottom:370px;
+    text-align: center;
+    font-family:segoe script;
+    font-size: 11px;
+    color: white;
+  }
+
+  .content{
+
+    position: relative;
+    overflow: auto;
+    height: 252px;
+    width: 320px;
+    bottom: 395px;
+    left: -60px;
+    }
 }

@@ -7,9 +7,8 @@ import { FormControl } from '@angular/forms';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
- 
+
   active = 1;
-  toppings = new FormControl('');
-   toppingList: string[] = ['Extra cheese', 'Mushroom', 'Onion', 'Pepperoni', 'Sausage', 'Tomato'];
- 
+
+
 }

@@ -6,9 +6,11 @@ mat-toolbar{
   color: white;
 }
 
+
+
 form{
   position: relative;
-  left: 730px;
+  left: 950px;
 
 }
 
@@ -25,6 +27,8 @@ form{
 
 .navbar{
   background-color: #62508f;
+  width: 1350px;
+
 
 }
 
@@ -56,10 +60,25 @@ a:hover{
 }
 
 @media(width:320px)and(width:320px){
+  form{
+    position: relative;
+    left: 50px;
+    width: 250px;
+
+
+  }
+
+  .btn{
+    width: 60px;
+    font-size: 10px;
+    padding-right: 19px;
+    color: black;
+    font-weight: bold;
+  }
 
   .navbar{
     background-color: #7d69ac;
-  
+
   }
   .nav-tabs{
 
@@ -77,7 +96,7 @@ a:hover{
   li{
     width: 300px;
   }
-  
+
 
 
 

@@ -1,9 +1,16 @@
-import { CarrosselComponent } from './components/reutilizaveis/carrossel/components/carrossel';
 import { ModalModule } from './components/reutilizaveis/modal/modal.module';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { HomeComponent } from './components/home/home.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {MatCardModule} from '@angular/material/card';
+
+
+import { HomeComponent } from './components/home';
+import {
+CarrosselComponent
+} from './components/reutilizaveis/carrossel/components/carrossel';
+
+
 
 
 
@@ -11,13 +18,14 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
   declarations: [
     HomeComponent,
     CarrosselComponent,
-   
-    
+
+
   ],
   imports: [
     CommonModule,
     NgbModule,
     ModalModule,
+    MatCardModule,
 
 
   ],

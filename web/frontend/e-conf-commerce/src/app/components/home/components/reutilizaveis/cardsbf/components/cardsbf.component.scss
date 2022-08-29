@@ -1,0 +1,211 @@
+.contador p{
+  width: 30px;
+  height: 30px;
+  background-color: #4E342E;
+  color:white;
+  position: relative;
+  bottom: 3550px;
+  left: 1250px;
+  border-radius: 12px;
+}
+.valor0{
+ padding-left: 12px;
+ padding-top: 6px;
+}
+
+.container{
+  position: relative;
+  right: 10px;
+}
+
+mat-card{
+  position: relative;
+  bottom: 0px;
+  right: 0px;
+  width: 300px;
+  height: 400px;
+  background-color: #4E342E;
+  border-radius: 10px;
+  border: 2px solid grey;
+}
+
+.card_body{
+  height: 0px;
+}
+
+.titulo_Card,.subtitulo_Card{
+  color: white;
+  font-family: segoe script;
+  font-size:11px;
+}
+
+.card-1{
+  position: relative;
+
+  bottom: 20px;
+}
+.card-2{
+  position: relative;
+  left: 360px;
+  bottom: 415px;
+
+}
+.card-3{
+  position: relative;
+  left: 720px;
+  bottom: 815px;
+  //z-index: -1;
+
+}
+
+
+.container-btn{
+  position: relative;
+  left: 10px;
+}
+
+
+.btn-success,.btn-danger,.btn_modal{
+  width: 80px;
+  margin-left: 8px;
+  font-family: segoe script;
+  font-size: 12px;
+  margin-top: 10px;
+  color: white;
+}
+
+.btn-success{
+  position: relative;
+  top: 130px;
+  left: 4px;
+}
+.btn-danger{
+  position: relative;
+  top: 90px;
+  left: 94px;
+}
+.btn_modal{
+  position: relative;
+  top: 44px;
+  left: 170px;
+  font-size: 9px;
+  height: 10px;
+}
+
+
+.row2{
+  position: relative;
+  bottom: 790px;
+}
+.row3{
+  position: relative;
+  bottom: 25px;
+  left: 15px;
+}
+
+.row4{
+  position: relative;
+  bottom: 1570px;
+  left: 15px;
+}
+
+
+
+mat-card .imgcard{
+  height: 200px;
+  background-color: grey;
+}
+mat-card img{
+  height: 200px;
+  width: 263px;
+  background-color: grey;
+}
+
+
+
+@media(min-width:320px)and(max-width:720px){
+  .content{
+
+    position: relative;
+    overflow: auto;
+    height: 252px;
+    width: 320px;
+    bottom: 385px;
+    left: -60px;
+    }
+  mat-card{
+    width: 260px;
+    position: relative;
+    left: -8px;
+    bottom: 950px;
+  }
+  mat-card img{
+    height: 200px;
+    width: 234px;
+    bottom: 910px;
+
+    background-color: grey;
+  }
+
+  .card-1{
+    position: relative;
+    //left: 120px;
+    bottom: 410px;
+
+  }
+  .card-2{
+    position: relative;
+    left: -11px;
+    bottom: 400px;
+
+  }
+  .card-3{
+    position: relative;
+    left: -11px;
+    bottom: 400px;
+    margin-top: 10px;
+
+  }
+  .card-4{
+    position: relative;
+    right: 0px;
+    bottom: 700px;
+    margin-bottom:10px;
+
+  }
+  .card-5{
+    position: relative;
+    right: 0px;
+    bottom: 100px;
+    margin-bottom:10px;
+
+  }
+  .card-6{
+    position: relative;
+    right: 0px;
+    bottom: 100px;
+    margin-bottom:10px;
+
+  }
+
+  .container-btn{
+    position: relative;
+    left: 0px;
+  }
+
+  .row2{
+    position: relative;
+    bottom: 390px;
+
+  }
+  .row3{
+    position: relative;
+    top: 410px;
+    left: -8px;
+  }
+  .row4{
+    position: relative;
+    bottom: 790px;
+    left: -8px;
+  }
+}

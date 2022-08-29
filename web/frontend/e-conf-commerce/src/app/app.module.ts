@@ -1,3 +1,5 @@
+import { DashboardingRoutingModule } from './dashboard/dashboard-routing.module';
+import { DashboardModule } from './dashboard/dashboard.module';
 import { CarrinhoComprasModule } from './vendas/carrinhoCompras/carrinho-compras.module';
 import { PagamentosModule } from './vendas/pagamentos/pagamentos.module';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
@@ -24,12 +26,15 @@ import { BolosRoutingModule } from './bolos/bolos-routing.module';
 import { PagamentosRoutingModule } from './vendas/pagamentos/pagamentos-routing.module';
 import { CarrinhoComprasRoutingModule } from './vendas/carrinhoCompras';
 import { CartModule, CartRoutingModule } from './vendas/cart';
+import { BodyModule } from './body';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     NavbarComponent,
     SidebarComponent,
+
 
 
   ],
@@ -41,6 +46,7 @@ import { CartModule, CartRoutingModule } from './vendas/cart';
     MatToolbarModule,
     HttpClientModule,
     MatDialogModule,
+    BodyModule,
     CartModule,
     CartRoutingModule,
     CarrinhoComprasModule,
@@ -57,6 +63,8 @@ import { CartModule, CartRoutingModule } from './vendas/cart';
     ClientesRoutingModule,
     HomeModule,
     HomeRoutingModule,
+    DashboardModule,
+    DashboardingRoutingModule,
     LoginModule,
     LoginRoutingModule,
     //Raiz

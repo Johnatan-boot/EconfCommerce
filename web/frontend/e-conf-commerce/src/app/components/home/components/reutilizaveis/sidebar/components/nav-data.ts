@@ -1,5 +1,10 @@
 export const navbarData = [
   {
+    routeLink: 'login',
+    icon: 'fal fa-file',
+    label: 'logar'
+  },
+  {
     routeLink: 'home',
     icon: 'fal fa-file',
     label: 'Home'
@@ -20,21 +25,21 @@ export const navbarData = [
       label: 'Dashboard'
   },
   {
-      routeLink: 'bolos-tradcionais',
+      routeLink: 'bolostradicionais',
       icon: 'fal fa-box-open',
       label: 'Bolos Tradcionais'
   },
   {
-      routeLink: 'bolos-cobertura',
+      routeLink: 'boloscomcobertura',
       icon: 'fal fa-chart-bar',
       label: 'Bolos Cobertura'
   },
   {
-      routeLink: 'bolos-festas',
+      routeLink: 'bolosfestas',
       icon: 'fal fa-tags',
       label: 'Bolos Festas'
   }
- 
+
   /*{
       routeLink: 'media',
       icon: 'fal fa-camera',
